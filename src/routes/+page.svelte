@@ -3,5 +3,7 @@
     
 </script>
 <main class="w-full min-h-screen bg-black">
-<CursorEffect extraClass=" h-96"></CursorEffect>
+<CursorEffect extraClass=" h-screen"></CursorEffect>
+<div class="h-20 w-full bg-white"></div>
+<p>Hello</p>
 </main>

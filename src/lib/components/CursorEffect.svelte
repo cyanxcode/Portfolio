@@ -6,27 +6,33 @@
     let trail: any = $state([]);
     let images = ["https://picsum.photos/300/300", "https://picsum.photos/400/300", "https://picsum.photos/100/100", "https://picsum.photos/200/100", "https://picsum.photos/300/100", "https://picsum.photos/400/100"];
     let imageIndex = 0;
-    let lastTime = 0; // ⬅ Track last time image was added
-    const delay = 80; // ⬅ Minimum time between image spawns (ms)
+    let lastX = 0;
+let lastY = 0;
+const distanceThreshold = 40;
 
+function handleMouseMove(e: MouseEvent) {
+	const { pageX: x, pageY: y } = e;
 
-    function handleMouseMove(e: any) {const now = Date.now();
-        
-        if (now - lastTime > delay) {
-            lastTime = now;
+	// Calculate distance from last point
+	const dx = x - lastX;
+	const dy = y - lastY;
+	const distance = Math.sqrt(dx * dx + dy * dy);
 
-            const { clientX: x, clientY: y } = e;
-            const id = now + Math.random();
+	if (distance > distanceThreshold) {
+		lastX = x;
+		lastY = y;
 
-            trail = [...trail, { id, x, y, img: images[imageIndex] }];
-            imageIndex = (imageIndex + 1) % images.length;
+		const id = Date.now() + Math.random();
 
-            // Remove image after 600ms
-            setTimeout(() => {
-              trail = trail.filter((t: any) => t.id !== id);
-            }, 400);
-        }
-    }
+		trail = [...trail, { id, x, y, img: images[imageIndex] }];
+		imageIndex = (imageIndex + 1) % images.length;
+
+		setTimeout(() => {
+			trail = trail.filter((t: any) => t.id !== id);
+		}, 400);
+	}
+}
+    
 
 </script>
 
