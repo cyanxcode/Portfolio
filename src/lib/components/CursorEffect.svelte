@@ -1,14 +1,24 @@
 <script lang="ts">
 	import { fade } from "svelte/transition";
+    import  img1  from "$lib/img/cursor/Amprio.png";
+    import  img2  from "$lib/img/cursor/Apple.png";
+    import  img3  from "$lib/img/cursor/Cyan.jpg";
+    import  img4  from "$lib/img/cursor/Cybercup.png";
+    import  img5  from "$lib/img/cursor/Realm.png";
 
     let {children, extraClass=""} : {children?: any, extraClass: String} = $props();
 
     let trail: any = $state([]);
-    let images = ["https://picsum.photos/300/300", "https://picsum.photos/400/300", "https://picsum.photos/100/100", "https://picsum.photos/200/100", "https://picsum.photos/300/100", "https://picsum.photos/400/100"];
+    let images = [
+        img2,
+        img3,
+        img4,
+        img5
+    ];
     let imageIndex = 0;
     let lastX = 0;
 let lastY = 0;
-const distanceThreshold = 40;
+const distanceThreshold = 80;
 
 function handleMouseMove(e: MouseEvent) {
 	const { pageX: x, pageY: y } = e;
