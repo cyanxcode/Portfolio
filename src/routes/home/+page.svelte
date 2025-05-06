@@ -1,7 +1,7 @@
 <script>
+	import About from "$lib/components/About.svelte";
 	import ConcentricCircle from "$lib/components/ConcentricCircle.svelte";
 	import CursorEffect from "$lib/components/CursorEffect.svelte";
-    import me from "$lib/img/me.jpg";
     import '@fontsource/karantina';
 </script>
 <main class="w-full min-h-screen bg-black overflow-x-hidden">
@@ -20,7 +20,7 @@
         <div class="grid place-items-center relative w-84">
             <div class="flex p-10 bg-black blur-3xl w-96 h-96 absolute z-20">
             </div>
-                <img src={me} alt="" class="z-30 absolute w-60 h-84">
+                <img src="/img/me.jpg" alt="" class="z-30 absolute w-60 h-84">
             </div>
      </div>
     </div>
@@ -32,12 +32,5 @@
     </div>
      
 </CursorEffect>
+<About />
 </main>
-<style>
-    .karantina {
-        font-family: 'Karantina';
-        src: url('/fonts/Karantina-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-</style>

@@ -1,20 +1,10 @@
 <script lang="ts">
 	import { fade } from "svelte/transition";
-    import  img1  from "$lib/img/cursor/Amprio.png";
-    import  img2  from "$lib/img/cursor/Apple.png";
-    import  img3  from "$lib/img/cursor/Cyan.jpg";
-    import  img4  from "$lib/img/cursor/Cybercup.png";
-    import  img5  from "$lib/img/cursor/Realm.png";
 
     let {children, extraClass=""} : {children?: any, extraClass: String} = $props();
 
     let trail: any = $state([]);
-    let images = [
-        img2,
-        img3,
-        img4,
-        img5
-    ];
+    let images = ["/img/cursor/Apple.png", "/img/cursor/Cyan.jpg", "/img/cursor/Cybercup.png", "/img/cursor/Realm.png"];
     let imageIndex = 0;
     let lastX = 0;
 let lastY = 0;

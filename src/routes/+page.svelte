@@ -1,6 +1,6 @@
 <script>
 	import CursorEffect from "$lib/components/CursorEffect.svelte";
-    import me from "$lib/img/me.jpg";
+    import me from "/img/me.jpg";
 </script>
 <main class="w-full min-h-screen bg-black">
 <nav class="absolute top-10 left-10"><button class="text-white h-10 px-6 rounded-full border border-white">Menu</button></nav>
