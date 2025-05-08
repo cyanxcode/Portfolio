@@ -62,7 +62,7 @@ if (direction === 1 && offset >= 0) {
     
     <!-- Text Section -->
     <div class="flex flex-col text-right items-end p-4 md:p-8 gap-1 md:gap-6">
-      <h1 class="karantina text-right text-white text-6xl md:text-7xl lg:text-8xl leading-tight uppercase whitespace-nowrap">
+      <h1 class="karantina text-right text-white text-5xl md:text-7xl lg:text-8xl leading-tight uppercase whitespace-nowrap">
         About <br /> Avijit Verma
       </h1>
       <p class="text-white font-extralight text-sm sm:text-base md:text-lg lg:text-xl max-w-md">

@@ -3,16 +3,10 @@
 	import Carousel from "$lib/components/Carousel.svelte";
 	import ConcentricCircle from "$lib/components/ConcentricCircle.svelte";
 	import CursorEffect from "$lib/components/CursorEffect.svelte";
+	import Work from "$lib/components/Work.svelte";
     import '@fontsource/karantina';
 </script>
 <main class="w-full min-h-screen bg-black overflow-x-hidden">
-
-    <nav class="w-full h-24 absolute text-white flex justify-start items-center text-md uppercase gap-10 px-10 font-mono">
-        <a href="#about">ABOUT</a>
-        <a href="#about">WORK</a>
-        <a href="#about">FAQs</a>
-        <a href="#about">CONTACT</a>
-    </nav>
 <CursorEffect extraClass="min-h-screen grid place-items-center">
     <div class="min-h-screen w-full grid place-items-center relative px-4 md:px-10">
 
@@ -39,7 +33,10 @@
       </div>
 </CursorEffect>
 <About />
-<Carousel /><div class="w-full h-screen overflow-hidden relative">
+<Carousel />
+
+<Work />
+<div class="w-full h-screen overflow-hidden relative">
   <div class="w-full h-full grid grid-cols-2 absolute z-10">
     <!-- Left Column: Text -->
     <div class="flex flex-col justify-start md:justify-center items-start p-12 z-20">
@@ -50,7 +47,7 @@
 
     <!-- Right Column: Circle Partially Overflowing -->
     <div class="relative">
-      <div class="absolute top-2/3 md:top-1/2 md:left-0 -left-40 transform -translate-y-1/2">
+      <div class="absolute top-2/3 md:top-1/2 md:left-0 -left-40  transform -translate-y-1/2">
         <ConcentricCircle />
       </div>
     </div>
