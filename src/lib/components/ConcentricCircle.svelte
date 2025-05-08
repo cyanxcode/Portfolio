@@ -4,8 +4,8 @@
     let numCircles = 4;
     let radiusStep = 60;
     let center = 300;
-    const imgs = [ '/icons/react.svg','/icons/svelte.svg','/icons/nextjs.svg', '/icons/shopify.svg','/icons/figma.svg', '/icons/tailwind.svg', '/icons/git.svg','/icons/html.svg','/icons/css.svg','/icons/javascript.svg',];
-    const iconsPerOrbit = [2, 3, 2, 3]
+    const imgs = ['/icons/figma.svg', '/icons/nextjs.svg', '/icons/react.svg','/icons/svelte.svg', '/icons/firebase.svg', '/icons/tailwind.svg', '/icons/git.svg','/icons/mongo.svg','/icons/shopify.svg','/icons/html.svg','/icons/css.svg','/icons/javascript.svg',];
+    const iconsPerOrbit = [1, 3, 5, 3]
     const orbits: any = $state([]);
     let startingAngles= [
      0, Math.PI / 2, Math.PI / 3, Math.PI, Math.PI * 1.5
@@ -55,7 +55,7 @@
   });
   </script>
   
-  <svg width="600" height="600" viewBox="0 0 600 600">
+  <svg width="600" height="600" viewBox="0 0 600 600" class="overflow-hidden">
     {#each orbits as orbit}
       <circle
         cx={center}
