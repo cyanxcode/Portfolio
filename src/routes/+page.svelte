@@ -39,14 +39,21 @@
       </div>
 </CursorEffect>
 <About />
-<Carousel />
-    <div class="w-full h-screen">
-     <div class="w-full h-screen grid grid-cols-2 absolute z-10 place-content-center">
-        <div class="flex flex-col items-center">
-            <h1 class=" p-20 karantina text-white text-7xl/[0.95] uppercase text-left">Bridging the gap b/w design, code & business.</h1>
-            
-        </div>
-        <ConcentricCircle />
-     </div>
+<Carousel /><div class="w-full h-screen overflow-hidden relative">
+  <div class="w-full h-full grid grid-cols-2 absolute z-10">
+    <!-- Left Column: Text -->
+    <div class="flex flex-col justify-start md:justify-center items-start p-12 z-20">
+      <h1 class="karantina text-white text-5xl md:text-7xl uppercase text-left leading-tight">
+        <span class="text-nowrap">Bridging the gap</span> <span class="text-nowrap"> b/w design,</span><br/> code & business.
+      </h1>
     </div>
+
+    <!-- Right Column: Circle Partially Overflowing -->
+    <div class="relative">
+      <div class="absolute top-2/3 md:top-1/2 md:left-0 -left-40 transform -translate-y-1/2">
+        <ConcentricCircle />
+      </div>
+    </div>
+  </div>
+</div>
 </main>
