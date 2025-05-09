@@ -6,7 +6,7 @@
 	import Work from "$lib/components/Work.svelte";
     import '@fontsource/karantina';
 </script>
-<main class="w-full min-h-screen bg-black overflow-x-hidden">
+<main class="w-full min-h-screen overflow-x-hidden">
 <CursorEffect extraClass="grid place-items-center">
     <div class="h-auto lg:h-screen box-border py-24 w-full grid place-items-center relative px-4 md:px-10">
 
@@ -17,7 +17,7 @@
             <h1 class="karantina text-white text-7xl sm:text-9xl md:text-[9rem] lg:text-[10rem] xl:text-[12rem] leading-none">
               CYAN <br> STUDIOS
             </h1>
-            <h2 class="text-white font-extralight text-[8px] sm:text-xs md:text-md xl:text-lg">
+            <h2 class="text-white font-extralight text-xs md:text-md xl:text-lg">
               A STUDIO THAT <b class="font-bold">CREATES SITES</b> FOR STARTUPS WITH <b class="font-bold">TASTE</b>
             </h2>
           </div>

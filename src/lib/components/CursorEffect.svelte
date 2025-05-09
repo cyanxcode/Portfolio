@@ -37,7 +37,7 @@ function handleMouseMove(e: MouseEvent) {
 </script>
 
 
-<div role="presentation" class={`${extraClass}`} onmousemove={handleMouseMove}>
+<div role="presentation" class={`${extraClass} -z-10`} onmousemove={handleMouseMove}>
     {@render children?.()}
     {#each trail as t (t.id)}
       <img
