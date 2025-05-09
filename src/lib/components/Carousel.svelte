@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="snap-start w-84 h-96 flex-shrink-0 rounded-2xl bg-blue-400 overflow-hidden">
-          <img src="/cards/card-1.svg" class="w-full h-full object-cover" alt="">
+          <img src="/cards/card-4.svg" class="w-full h-full object-cover" alt="">
         </div>
         
     </div>

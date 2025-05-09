@@ -79,16 +79,16 @@ if (direction === 1 && offset >= 0) {
 
     <!-- Button with Arc Text -->
     <button
-      class="hover:scale-105 absolute z-10 left-1/2 -translate-y-1/2 -translate-x-1/2 top-full w-28 md:w-32 aspect-square border-[10px] md:border-[12px] border-black rounded-full bg-cyan-600 text-white font-medium transition-all duration-300 ease-in-out hover:cursor-pointer">
+      class="hover:scale-105 absolute z-10 left-1/2 -translate-y-1/2 -translate-x-1/2 top-full w-28 md:w-32 aspect-square border-[10px] md:border-[12px] border-black rounded-full bg-blue-600 text-white font-medium transition-all duration-300 ease-in-out hover:cursor-pointer">
       
       <!-- Arc Text SVG -->
       <svg class="absolute inset-0 w-full h-full -mt-2" viewBox="0 0 100 100">
         <defs>
           <path id="arcPath" d="M10,60 A40,40 0 0,1 90,60" />
         </defs>
-        <text fill="white" font-size="12" font-weight="400" style="letter-spacing: 1px;">
+        <text fill="white" font-size="10" font-weight="400" style="letter-spacing: 1px;">
           <textPath href="#arcPath" startOffset="50%" text-anchor="middle">
-            Let's Collaborate
+            GET MY RESUME
           </textPath>
         </text>
       </svg>
