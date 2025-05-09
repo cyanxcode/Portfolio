@@ -21,13 +21,25 @@
       </div>
     </div>
         
-        <div class="snap-start w-84 h-96 flex-shrink-0 rounded-2xl bg-blue-400 overflow-hidden">
-          <img src="/cards/card-3.svg" class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="snap-start w-84 h-96 flex-shrink-0 rounded-2xl bg-blue-400 overflow-hidden">
-          <img src="/cards/card-4.svg" class="w-full h-full object-cover" alt="">
-        </div>
+        <div class="snap-start w-84 h-96 flex-shrink-0 rounded-2xl bg-blue-400 overflow-hidden relative">
+          <img src="/cards/card-7.svg" class="w-full h-full object-cover" alt="">
+          <div class="absolute z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
+            <img src="/icons/figma.svg" alt="" class="w-16 pb-8">
+            <h4 class="text-white shadow-2xl text-4xl text-center font-b">UI / UX Design</h4>
+            <p class="text-zinc-300 text-lg text-center font-light">From wireframes to final visuals, I create smooth, modern designs your users will love.</p>
+            
+          </div>
+        </div> 
+        <div class="snap-start w-84 h-96 flex-shrink-0 rounded-2xl bg-blue-400 overflow-hidden relative">
+          <img src="/cards/card-8.svg" class="w-full h-full object-cover" alt="">
+          <div class="absolute  z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
+            <div class=" z-20 absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent"></div>
+            <h4 class="text-white shadow-2xl text-4xl w-full text-left font-b">Design System</h4>
+            <p class="text-zinc-300 text-shadow-md text-lg text-left font-light">I create flexible design systems powered by cutting-edge tools to streamline design and development.</p>
+            <img src="/extra/bracket.svg" alt="" class="w-16 pt-8">
 
+          </div>
+        </div>
         <div class="snap-start w-84 h-96 flex-shrink-0 rounded-2xl bg-blue-400 overflow-hidden">
           <img src="/cards/card-1.svg" class="w-full h-full object-cover" alt="">
         </div>
