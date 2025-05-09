@@ -60,9 +60,13 @@ if (direction === 1 && offset >= 0) {
  <main class="w-full">
   <div class="w-full grid grid-cols-2 px-3 md:px-10 lg:px-16 relative ">
     
+
+    <div class="flex md:justify-end justify-center">
+      <img src="/img/profile.jpeg" alt="Avijit Verma" class="w-full max-w-md h-[22rem] md:h-[26rem] lg:h-[30rem] object-cover rounded-lg shadow-md" />
+    </div>
     <!-- Text Section -->
-    <div class="flex flex-col text-right items-end p-4 md:p-8 gap-1 md:gap-6">
-      <h1 class="karantina text-right text-white text-5xl md:text-7xl lg:text-8xl leading-tight uppercase whitespace-nowrap">
+    <div class="flex flex-col text-left items-start p-4 md:p-8 gap-1 md:gap-6">
+      <h1 class="karantina text-left text-white text-5xl md:text-7xl lg:text-8xl leading-tight uppercase whitespace-nowrap">
         About <br /> Avijit Verma
       </h1>
       <p class="text-white font-extralight text-sm sm:text-base md:text-lg lg:text-xl max-w-md">
@@ -72,9 +76,6 @@ if (direction === 1 && offset >= 0) {
     </div>
 
     <!-- Image -->
-    <div class="flex md:justify-start justify-center">
-      <img src="/img/profile.jpeg" alt="Avijit Verma" class="w-full max-w-md h-[22rem] md:h-[26rem] lg:h-[30rem] object-cover rounded-lg shadow-md" />
-    </div>
 
     <!-- Button with Arc Text -->
     <button

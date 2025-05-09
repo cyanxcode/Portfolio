@@ -7,8 +7,8 @@
     import '@fontsource/karantina';
 </script>
 <main class="w-full min-h-screen bg-black overflow-x-hidden">
-<CursorEffect extraClass="min-h-screen grid place-items-center">
-    <div class="min-h-screen w-full grid place-items-center relative px-4 md:px-10">
+<CursorEffect extraClass="grid place-items-center">
+    <div class="h-auto lg:h-screen box-border py-24 w-full grid place-items-center relative px-4 md:px-10">
 
         <div class="relative z-10 w-full flex flex-row justify-end items-center pr-5 md:px-10 lg:px-24 gap-6">
           

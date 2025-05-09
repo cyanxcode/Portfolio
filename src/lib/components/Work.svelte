@@ -6,7 +6,7 @@
     <div class="w-full flex flex-col gap-4">
         <img src="/img/cursor/Apple.png" alt=""  class="w-full aspect-video">
         <div class="text-zinc-500 flex gap-8 pl-10 text-sm"> <p>React JS</p><p>•</p><p>GSAP</p><p>•</p><p>Tailwindcss</p></div>
-        <div class="text-white flex gap-4 hover:gap-8 hover:px-10 px-12 items-center text-2xl transition-tall duration-100 ease-linear">
+        <div class="text-white flex gap-4 hover:gap-8 hover:px-10 px-12 items-center text-lg transition-tall duration-100 ease-linear">
             <img src="/extra/arrow-right.svg" alt="" class="w-10">
             Apple Website Recreated
         </div>
@@ -14,7 +14,7 @@
     <div class="w-full flex flex-col gap-4">
         <img src="/img/cursor/Amprio.png" alt=""  class="w-full aspect-video">
         <div class="text-zinc-500 flex gap-8 pl-10 text-sm"> <p>Next JS</p><p>•</p><p>Shopify</p><p>•</p><p>Tailwindcss</p></div>
-        <div class="text-white flex gap-4 hover:gap-8 hover:px-10 px-12 items-center text-2xl transition-tall duration-100 ease-linear">
+        <div class="text-white flex gap-4 hover:gap-8 hover:px-10 px-12 items-center text-lg transition-tall duration-100 ease-linear">
             <img src="/extra/arrow-right.svg" alt="" class="w-10">
             Amprio: Lighting Brand
         </div>
