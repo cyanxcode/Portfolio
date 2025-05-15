@@ -15,4 +15,11 @@
 
   
   </div>
-<button class="my-10 flex items-center justify-center gap-3 px-5 py-2 rounded-full font-bold bg-white  ml-[50%] -translate-x-1/2">Show all <img src="/extra/arrow-black-r.svg" class="w-8" alt=""></button>
+<button class="my-10 hover:scale-105 flex items-center justify-center gap-3 px-2 py-2 rounded-full font-bold bg-white  ml-[50%] -translate-x-1/2 transition-all duration-300 ease-in-out">
+    <p class="ml-4 mr-2">Show all</p>
+    <img src="/extra/arrow-black-r.svg" class="w-8 hidden" alt="">
+    <div class="bg-black rounded-full w-10 h-10 grid place-content-center">
+        <img src="/extra/arrow-right.svg" class="w-8" alt="">
+    </div>
+
+</button>
