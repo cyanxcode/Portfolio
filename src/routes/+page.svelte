@@ -3,6 +3,7 @@
 	import Carousel from "$lib/components/Carousel.svelte";
 	import ConcentricCircle from "$lib/components/ConcentricCircle.svelte";
 	import CursorEffect from "$lib/components/CursorEffect.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 	import Testimonial from "$lib/components/Testimonial.svelte";
 	import Work from "$lib/components/Work.svelte";
     import '@fontsource/karantina';
@@ -12,7 +13,6 @@
     <div class="h-auto lg:h-screen box-border py-24 w-full grid place-items-center relative px-4 md:px-10">
 
         <div class="relative z-10 w-full flex flex-row justify-end items-center pr-5 md:px-10 lg:px-24 gap-6">
-          
           <!-- Text Section -->
           <div class="text-right">
             <h1 class="karantina text-white text-7xl sm:text-9xl md:text-[9rem] lg:text-[10rem] xl:text-[12rem] leading-none">
@@ -57,4 +57,5 @@
     </div>
   </div>
 </div>
+<Footer />
 </main>

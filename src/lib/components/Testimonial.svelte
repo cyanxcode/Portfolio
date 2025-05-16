@@ -16,10 +16,12 @@
       },
     ];
   </script>
-
-<h1 class="karantina text-left py-10 px-4 sm:px-8 md:px-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
-    Testimonials
-</h1>
+<div class="flex items-end py-10 gap-4">
+    <h1 class="karantina text-left pl-4 sm:pl-8 md:pl-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
+        Testimonials 
+    </h1>
+    <img src="/icons/bb8.svg" alt="" class=" -ml-5 w-20 md:w-40">
+</div>
 <div class="flex flex-col items-center w-full space-y-6 px-4 sm:px-8 md:px-20">
     {#each testimonials as testimonial}
     <div class="w-full bg-white text-black md:bg-black md:text-white md:hover:bg-white md:hover:text-black transition-colors duration-300 group rounded-xl p-4 sm:p-6 flex flex-col md:flex-row md:items-center gap-4">
