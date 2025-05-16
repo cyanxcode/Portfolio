@@ -4,7 +4,7 @@
     let x = $state(0);
     let y = $state(0);
     let variant: keyof typeof variants = $state('close');
-    let isTouch = false;
+    let isTouch = $state(false);
 
     function handleTouchStart() {
         isTouch = true;
