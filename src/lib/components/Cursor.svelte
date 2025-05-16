@@ -4,6 +4,12 @@
     let x = $state(0);
     let y = $state(0);
     let variant: keyof typeof variants = $state('close');
+    let isTouch = false;
+
+    function handleTouchStart() {
+        isTouch = true;
+        variant = 'close'; // Hide cursor
+    }
   
     const variants = {
       close: 'hidden',
@@ -42,16 +48,17 @@
       const hovered = document.elementFromPoint(x, y);
       updateCursorVariant(hovered);
     }
-  
     onMount(() => {
-      window.addEventListener('mousemove', handleMove);
-      window.addEventListener('scroll', handleScroll, true);
-  
-      return () => {
-        window.removeEventListener('mousemove', handleMove);
-        window.removeEventListener('scroll', handleScroll, true);
-      };
-    });
+        window.addEventListener('mousemove', handleMove);
+        window.addEventListener('scroll', handleScroll, true);
+        window.addEventListener('touchstart', handleTouchStart, { once: true });
+
+        return () => {
+            window.removeEventListener('mousemove', handleMove);
+            window.removeEventListener('scroll', handleScroll, true);
+            window.removeEventListener('touchstart', handleTouchStart);
+        };
+});
   </script>
   
   <!-- Cursor -->
