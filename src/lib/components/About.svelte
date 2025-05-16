@@ -7,7 +7,7 @@
    let marqueeEl: HTMLDivElement;
    let offset = $state(0);
    let direction = $state(1);
-   let speed = 1;
+   let speed = 1.4;
    let bounceFactor = 0.1; 
    let bounceState = $state(0);
  
@@ -101,7 +101,7 @@ if (direction === 1 && offset >= 0) {
   <div class="bg-zinc-200 overflow-hidden h-28 md:h-36 mt-4 mb-24">
     <div bind:this={marqueeEl} class="flex h-full w-max whitespace-nowrap animate-scroll">
       {#each Array(2) as _}
-        <div class="flex items-center justify-between gap-4 md:gap-6 w-[100vw] h-full text-black px-6">
+        <div class="flex items-center justify-between gap-16 md:gap-32 h-full text-black px-6">
           <h1 class="text-3xl md:text-4xl lg:text-5xl karantina text-center">Web Developer</h1>
           <img src="/extra/star4.svg" alt="" class="w-4 md:w-6" />
           <h1 class="text-3xl md:text-4xl lg:text-5xl karantina text-center">UI Designer</h1>
@@ -109,6 +109,8 @@ if (direction === 1 && offset >= 0) {
           <h1 class="text-3xl md:text-4xl lg:text-5xl karantina text-center">Engineer</h1>
           <img src="/extra/star4.svg" alt="" class="w-4 md:w-6" />
         </div>
+
+        <div class="w-4 md:w-20"></div>
       {/each}
     </div>
   </div>
