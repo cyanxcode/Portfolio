@@ -1,7 +1,8 @@
 <footer class="w-full bg-black relative overflow-hidden">
+    <div class="absolute w-full h-0.5 bg-zinc-200 blur-sm"></div>
     <div class="grid grid-cols-2 p-10">
-        <div class="text-white uppercase font-mono h-32">INFO</div>
-        <div class="text-white uppercase font-mono h-32 flex flex-col gap-4">
+        <div class="text-white uppercase font-semibold h-32 ml-8">INFO</div>
+        <div class="text-white uppercase flex flex-col gap-4">
             <p class="flex  flex-col gap-1 items-start">Email <span class="text-zinc-300 lowercase text-sm hover:underline">avijitv1205@gmail.com</span></p>
             <p class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">Work <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5"></p>
             <p class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">Resume <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5"></p>

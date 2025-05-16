@@ -6,7 +6,7 @@
     <div class="w-full h-12 bg-white flex items-center justify-evenly font-medium text-base sm:text-lg">
         <a target="_blank" href="https://www.instagram.com/lifeofavijit" class="flex gap-2 items-center"><img src="/icons/instagram.svg" alt="" class="w-6 md:w-8"><p class="hidden md:block">Instagram </p></a>
         <a target="_blank" href="https://www.linkedin.com/in/avijit-verma-2abb962a5" class="flex gap-2 items-center"><img src="/icons/linkedin.svg" alt="" class="w-6 md:w-8"><p class="hidden md:block">LinkedIn </p></a>
-        <div class="hidden md:block"></div>
+        <div class="hidden md:block w-[10%]"></div>
         <a target="_blank" href="/404" class="flex gap-2 items-center"><img src="/icons/dribbble.svg" alt="" class="w-6 md:w-8"><p class="hidden md:block">Dribbble </p></a>
         <a target="_blank" href="/404" class="flex gap-2 items-center"><img src="/icons/x.svg" alt="" class="w-6 md:w-8"><p class="hidden md:block">x.com </p></a>
     </div>

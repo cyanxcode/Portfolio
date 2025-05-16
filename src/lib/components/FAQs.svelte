@@ -1,0 +1,49 @@
+<script>
+	import Accordian from "./Accordian/Accordian.svelte";
+	import AccordianContent from "./Accordian/AccordianContent.svelte";
+	import AccordianIteam from "./Accordian/AccordianIteam.svelte";
+	import AccordianTrigger from "./Accordian/AccordianTrigger.svelte";
+    const faqs = [
+  {
+    question: "What’s your workflow like?",
+    answer: "I start by understanding your goals, then move into wireframes and design mockups. Once approved, I build, test, and iterate — with continuous feedback loops throughout."
+  },
+  {
+    question: "Do you do both design and development?",
+    answer: "Yes! I bridge the gap between design and code. You don’t need to hire separate designers and developers — I handle both."
+  },
+  {
+    question: "What’s your typical project timeline?",
+    answer: "Most projects take 4–6 weeks, depending on complexity. I’ll give you a custom timeline after our first conversation."
+  },
+  {
+    question: "What do you charge?",
+    answer: "Pricing depends on the project scope, but I usually offer fixed-rate packages. After a quick call, I’ll send over a custom quote."
+  },
+  {
+    question: "Do you offer post-launch support?",
+    answer: "Yes. I offer maintenance packages and can help with future updates or performance improvements."
+  }
+];
+
+</script>
+
+<div class="flex w-full justify-center py-6 gap-4">
+    <h1 class="karantina text-right pl-4 sm:pl-8 md:pl-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
+        FAQs
+    </h1>
+\</div>
+<div class="text-white flex flex-col items-center pb-20">
+    <Accordian type="single" extraClass="w-[90%] md:w-[60%] px-10">
+        {#each faqs as faq}
+        <AccordianIteam>
+            <AccordianTrigger>
+                <p class="text-md font-light">{faq.question}</p>
+            </AccordianTrigger>
+            <AccordianContent>
+                <p class="text-md font-light">{faq.answer}</p>
+            </AccordianContent>
+        </AccordianIteam>
+        {/each}
+    </Accordian>
+</div>

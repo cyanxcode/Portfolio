@@ -3,6 +3,7 @@
 	import Carousel from "$lib/components/Carousel.svelte";
 	import ConcentricCircle from "$lib/components/ConcentricCircle.svelte";
 	import CursorEffect from "$lib/components/CursorEffect.svelte";
+	import FAQs from "$lib/components/FAQs.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import Testimonial from "$lib/components/Testimonial.svelte";
 	import Work from "$lib/components/Work.svelte";
@@ -50,12 +51,13 @@
     </div>
 
     <!-- Right Column: Circle Partially Overflowing -->
-    <div class="relative">
+    <div class="relative mb-20">
       <div class="absolute top-2/3 md:top-1/2 md:left-0 -left-40  transform -translate-y-1/2">
         <ConcentricCircle />
       </div>
     </div>
   </div>
 </div>
+<FAQs />
 <Footer />
 </main>
