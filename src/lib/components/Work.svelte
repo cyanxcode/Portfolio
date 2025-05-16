@@ -16,7 +16,7 @@
 
   
   </div>
-<button class="my-10 hover:scale-105 flex items-center justify-center gap-3 px-2 py-2 rounded-full font-bold bg-white  ml-[50%] -translate-x-1/2 transition-all duration-300 ease-in-out">
+<button data-cursor="click" class="my-10 hover:scale-105 flex items-center justify-center gap-3 px-2 py-2 rounded-full font-bold bg-white  ml-[50%] -translate-x-1/2 transition-all duration-300 ease-in-out">
     <p class="ml-4 mr-2">Show all</p>
     <img src="/extra/arrow-black-r.svg" class="w-8 hidden" alt="">
     <div class="bg-black rounded-full w-10 h-10 grid place-content-center">
