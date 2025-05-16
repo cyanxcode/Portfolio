@@ -3,6 +3,7 @@
 	import Carousel from "$lib/components/Carousel.svelte";
 	import ConcentricCircle from "$lib/components/ConcentricCircle.svelte";
 	import CursorEffect from "$lib/components/CursorEffect.svelte";
+	import Testimonial from "$lib/components/Testimonial.svelte";
 	import Work from "$lib/components/Work.svelte";
     import '@fontsource/karantina';
 </script>
@@ -36,6 +37,9 @@
 <Carousel />
 
 <Work />
+<Testimonial />
+
+
 <div class="w-full h-screen overflow-hidden relative">
   <div class="w-full h-full grid grid-cols-2 absolute z-10">
     <!-- Left Column: Text -->
