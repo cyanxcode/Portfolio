@@ -4,12 +4,6 @@
     let x = $state(0);
     let y = $state(0);
     let variant: keyof typeof variants = $state('close');
-    let isTouch = $state(false);
-
-    function handleTouchStart() {
-        isTouch = true;
-        variant = 'close'; // Hide cursor
-    }
   
     const variants = {
       close: 'hidden',
@@ -18,7 +12,7 @@
       click: 'w-12 h-12 bg-white flex items-center justify-center text-xs',
       icon: 'w-12 h-12 bg-white text-white flex items-center justify-center text-xs',
     };
-  
+    let lastTarget: EventTarget | null = null;
     function updateCursorVariant(target: EventTarget | null) {
       let el = target as HTMLElement | null;
       let foundCursor = false;
@@ -49,16 +43,30 @@
       updateCursorVariant(hovered);
     }
     onMount(() => {
-        window.addEventListener('mousemove', handleMove);
-        window.addEventListener('scroll', handleScroll, true);
-        window.addEventListener('touchstart', handleTouchStart, { once: true });
+    function handlePointerMove(e: PointerEvent) {
+        if (e.pointerType !== 'mouse') {
+          variant = 'close'; // Hide cursor trail on mobile or stylus
+          return;
+        }
 
-        return () => {
-            window.removeEventListener('mousemove', handleMove);
-            window.removeEventListener('scroll', handleScroll, true);
-            window.removeEventListener('touchstart', handleTouchStart);
-        };
-});
+        x = e.clientX;
+        y = e.clientY;
+        let lastTarget = e.target;
+        updateCursorVariant(lastTarget);
+    }
+
+    function handleScroll() {
+        updateCursorVariant(lastTarget);
+    }
+
+    window.addEventListener('pointermove', handlePointerMove);
+    window.addEventListener('scroll', handleScroll, true);
+
+    return () => {
+        window.removeEventListener('pointermove', handlePointerMove);
+        window.removeEventListener('scroll', handleScroll, true);
+    };
+    });
   </script>
   
   <!-- Cursor -->
