@@ -2,11 +2,12 @@
 	import WorkItems from "./WorkItems.svelte";
 
 </script>
+<div class=""  data-cursor="default">
 <h1 class="karantina text-right py-10 px-4 sm:px-8 md:px-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
     My Work
   </h1>
   
-  <div class="grid grid-cols-1 md:grid-cols-3 px-4 sm:px-8 md:px-20 gap-4">
+  <div class="grid grid-cols-1  md:grid-cols-3 px-4 sm:px-8 md:px-20 gap-4">
     <WorkItems type="tall" img="/work/Apple5.png" title="Apple Website Recreated" description="Showcasing iPhone 15 Pro"/>    
     <WorkItems type="square" img="/work/Apple.png" title="Apple Website Recreated" description="Redesigned Apple Website showcasing iPhone 15 Pro"/>
     <WorkItems type="square" img="/work/Cybercup.png" title="Cybercup" description="Designed the Website for National Level Hackathon"/>
@@ -23,3 +24,4 @@
     </div>
 
 </button>
+</div>  

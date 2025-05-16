@@ -4,12 +4,14 @@
         name: "Dr. Shilpi Sharma",
         title: "Dept HOD",
         company: "Amity University",
-        quote: "Good work and great communication skills, can fit in any environment and have exceptional technical knowledge."
+        img: "/img/testimonial1.jpeg",
+        quote: "I am confident that Avijit Verma has the intellectual capabilities, motivation and determination required to succeed in his future endeavors. I am certain that he will contribute positively to any organization."
       },
       {
         name: "Rudrakshi Aggarwal",
         title: "Co Founder",
-        company: "Ampro",
+        company: "Amprio",
+        img: "/img/testimonial2.jpeg",
         quote: "Good work and great communication skills, can fit in any environment and have exceptional technical knowledge."
       },
     ];
@@ -24,7 +26,9 @@
         
         <!-- Profile Section -->
         <div class="flex md:w-[40%] w-full items-center gap-4">
-            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-black md:bg-white md:group-hover:bg-black shrink-0"></div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-black md:bg-white md:group-hover:bg-black shrink-0 overflow-hidden">
+                <img src={testimonial.img} alt={testimonial.name} class="w-full h-full object-cover rounded-full">
+            </div>
             <div class="flex flex-col">
                 <p class="text-lg sm:text-xl font-medium leading-tight">{testimonial.name}</p>
                 {#if testimonial.title}

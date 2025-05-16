@@ -57,7 +57,7 @@ if (direction === 1 && offset >= 0) {
  </script>
  
  <svelte:window on:scroll={handleScroll} />
- <main class="w-full">
+ <main class="w-full my-10" data-cursor="default">
   <div class="w-full grid grid-cols-2 px-3 md:px-10 lg:px-16 relative ">
     
 
@@ -79,7 +79,8 @@ if (direction === 1 && offset >= 0) {
 
     <!-- Button with Arc Text -->
     <button
-      class="hover:scale-105 absolute z-10 left-1/2 -translate-y-1/2 -translate-x-1/2 top-full w-28 md:w-32 aspect-square border-[10px] md:border-[12px] border-black rounded-full bg-blue-600 text-white font-medium transition-all duration-300 ease-in-out hover:cursor-pointer">
+      data-cursor="icon"
+      class="hover:scale-105 cursor-none absolute z-10 left-1/2 -translate-y-1/2 -translate-x-1/2 top-full w-28 md:w-32 aspect-square border-[10px] md:border-[12px] border-black rounded-full bg-blue-600 text-white font-medium transition-all duration-300 ease-in-out">
       
       <!-- Arc Text SVG -->
       <svg class="absolute inset-0 w-full h-full -mt-2" viewBox="0 0 100 100">

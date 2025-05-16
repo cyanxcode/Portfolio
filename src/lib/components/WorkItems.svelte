@@ -24,7 +24,7 @@
 </script>
 
 
-<button class={`${type} w-full h-full overflow-hidden rounded-2xl object-cover relative group`} onclick={handleClick}>
+<button data-cursor="icon" class={`${type} cursor-none w-full h-full overflow-hidden rounded-2xl object-cover relative group`} onclick={handleClick}>
     <img src={img} alt={title} class={`w-full h-full object-cover md:blur-md md:group-hover:blur-none ${isOpen ? "blur-none" : 'blur-md'} transition-all duration-300 ease-in-out`}>
     <div class={`${isOpen ? 'hidden' : ''} md:hidden  text-zinc-400 absolute z-40 text-lg animate-pulse top-1/2 left-1/2 -translate-1/2`}>Click to View</div> 
 

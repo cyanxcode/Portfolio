@@ -10,7 +10,7 @@
         <a href="#x" class="">Work</a>
         <a href="#x" class="">Pricing</a>
     </div>
-    <button onclick={() => isOpen = !isOpen} class="poly z-50">
+    <button onclick={() => isOpen = !isOpen} class="poly z-50  cursor-pointer">
         <img src="/extra/menu2.svg" class="w-6 ml-[50%] mt-3 -translate-1/2" alt="">
     </button>
 </nav>
