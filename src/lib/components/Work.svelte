@@ -2,7 +2,7 @@
 	import WorkItems from "./WorkItems.svelte";
 
 </script>
-<div class=""  data-cursor="default">
+<div class="" data-cursor="asteroid">
 <h1 class="karantina text-right py-10 px-4 sm:px-8 md:px-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
     My Work
   </h1>

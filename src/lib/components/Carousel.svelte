@@ -1,4 +1,4 @@
-<div data-cursor="default" class="overflow-x-auto hide-scrollbar">
+<div class="overflow-x-auto hide-scrollbar" data-cursor="asteroid">
     <div class="w-full snap-x snap-mandatory flex gap-5 flex-row px-4 py-8"
     style="scroll-behavior: smooth;"
     >

@@ -57,7 +57,7 @@ if (direction === 1 && offset >= 0) {
  </script>
  
  <svelte:window on:scroll={handleScroll} />
- <main class="w-full py-10" data-cursor="default">
+ <main class="w-full py-10" data-cursor="asteroid">
   <div class="w-full grid grid-cols-2 px-3 md:px-10 lg:px-16 relative ">
     
 
