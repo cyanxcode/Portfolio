@@ -44,7 +44,7 @@
   <div class="w-full h-full grid grid-cols-2 absolute z-10">
     <!-- Left Column: Text -->
     <div class="flex flex-col justify-start md:justify-center items-start p-12 z-20">
-      <h1 class="font-karantina text-white text-5xl md:text-7xl uppercase text-left leading-tight">
+      <h1 class="karantina text-white text-5xl md:text-7xl uppercase text-left leading-tight">
         <span class="text-nowrap">Bridging the gap</span> <span class="text-nowrap"> b/w design,</span><br/> code & business.
       </h1>
     </div>
