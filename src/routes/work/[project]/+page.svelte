@@ -7,7 +7,7 @@
 </script>
 
 {#if work}
-<main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mb-20">
+<main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mt-16 mb-20">
 
     <div class="flex  gap-4 sm:gap-10 items-center p-6 sm:p-10 pt-20">
         <a href="/work">
