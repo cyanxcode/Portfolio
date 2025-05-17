@@ -16,7 +16,7 @@
     <WorkItems type="tall" img="/work/Apple3.png" title="Apple Website Recreated" description="Showcasing iPhone 15 Pro"/>    
     <WorkItems type="wide" img="/work/Amprio.png" title="Amprio" description="A full-fledged ecommerce store for a lighting brand"/>
     <WorkItems type="square" img="/work/Cybercup.png" title="Cybercup" description="Designed the Website for National Level Hackathon"/>
-    <WorkItems type="square" img="/work/Apple.png" title="Apple Website Recreated" description="Redesigned Apple Website showcasing iPhone 15 Pro"/>
+    <WorkItems type="square" img="/work/Realm.png" title="Realm" description="Developed an AI search engine"/>
 
 
   

@@ -3,7 +3,7 @@
     import { page } from '$app/stores';
 	import ImageCarousel from "$lib/components/ImageCarousel.svelte";
 
-    let work = data.find((item) => item.title === $page.params.project);
+    let work = data.find((item) => item.title.toLowerCase() === $page.params.project.toLowerCase());
 </script>
 
 {#if work}
