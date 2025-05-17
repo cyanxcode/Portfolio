@@ -1,56 +1,62 @@
+<script>
+    import { data } from "$lib/dats";
+    import { page } from '$app/stores';
 
-<main class="flex flex-col gap-2 px-20 lg:px-40 xl:px-60 mb-20">
+    let work = data.find((item) => item.title === $page.params.project);
+</script>
 
-    <div class="flex gap-10 w-full items-center p-10 pt-20">
+{#if work}
+<main class="flex flex-col gap-4 px-4 sm:px-10 md:px-20 lg:px-40 xl:px-60 mb-20">
+
+    <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 items-center p-6 sm:p-10 pt-10 sm:pt-20">
         <a href="/work">
-            <img src="/extra/left-w.svg" class="w-8 hover:scale-120 transition-all duration-200 ease-in-out" alt="">
+            <img src="/extra/left-w.svg" class="w-6 sm:w-8 hover:scale-110 transition-all duration-200 ease-in-out" alt="">
         </a>
-        <h2 class="text-3xl text-white font-medium">Amprio</h2>
+        <h2 class="text-2xl sm:text-3xl text-white font-medium text-center sm:text-left">{work.title}</h2>
     </div>
-    <div class="w-full grid grid-cols-4 grid-rows-2 gap-3">
-        <div class="col-span-2 row-span-2 aspect-square rounded-lg overflow-hidden bg-red-100">
-            <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
-        </div>
-        <div class="col-span-1 row-span-1 aspect-square rounded-lg overflow-hidden">
-            <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
-        </div>
-        <div class="col-span-1 row-span-1 aspect-square rounded-lg overflow-hidden">
-            <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
-        </div>
-        <div class="col-span-1 row-span-1 aspect-square rounded-lg overflow-hidden">
-            <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
-        </div>
-        <div class="col-span-1 row-span-1 aspect-square rounded-lg overflow-hidden">
-            <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
-        </div>
-    </div>
-    <p class="text-zinc-400 text-lg font-light mt-10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut voluptates pariatur quasi cumque deleniti, similique voluptatibus quod cupiditate maiores quo magnam? Debitis sit cum, incidunt repellat quidem nostrum culpa.
-    </p>
-    <h3 class="text-xl font-semibold text-white mt-5">Tech Stack</h3>
-    <p class="text-zinc-400 text-lg font-light">
-        React, Next js, TailwindCSS, Shopify, Vercel
-    </p>
-    <h3 class="text-xl font-semibold text-white mt-5">What I Built</h3>
-    <li class="text-zinc-400 text-lg font-light">
-        React, Next js, TailwindCSS, Shopify, Vercel
-    </li>
-    <li class="text-zinc-400 text-lg font-light">
-        React, Next js, TailwindCSS, Shopify, Vercel
-    </li>
-    <li class="text-zinc-400 text-lg font-light">
-        React, Next js, TailwindCSS, Shopify, Vercel
-    </li>
 
-    <div class="flex gap-5 py-6">
-        <a href="https://amprio.com" target="_blank" 
-        class="text-black text-lg font-semibold flex items-center justify-center rounded-sm bg-white py-2 w-36 hover:bg-zinc-200 transition-all duration-200 ease-in-out">
+    <div class="w-full grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3">
+        <div class="md:col-span-2 md:row-span-2 aspect-square rounded-lg overflow-hidden bg-red-100">
+            <img src={work.img[0]} alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
+        </div>
+        {#each Array(4) as _, i}
+            <div class="aspect-square hidden md:block rounded-lg overflow-hidden">
+                <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
+            </div>
+        {/each}
+    </div>
+
+    <p class="text-zinc-400 text-base sm:text-lg font-light mt-6 sm:mt-10">
+        {work.description}
+    </p>
+
+    {#each work.section as section}
+        <h3 class="text-lg sm:text-xl font-semibold text-white mt-4 sm:mt-5">{section.title}</h3>
+
+        <p class="text-zinc-400 text-base sm:text-lg font-light">
+            {@html section.content}
+        </p>
+    {/each}
+
+    <div class="flex flex-row gap-4 py-6">
+        {#if work.website}
+        <a href={work.website} target="_blank" 
+        class="text-black text-base sm:text-lg font-semibold flex items-center justify-center rounded-sm bg-white py-2 w-[50%] sm:w-36 hover:bg-zinc-200 transition-all duration-200 ease-in-out">
             Website
         </a>
-        <a href="https://amprio.com" target="_blank" 
-        class="text-white text-lg border-1 border-white gap-4 font-semibold flex items-center justify-center rounded-sm bg-black py-2 w-36 hover:bg-zinc-800 transition-all duration-200 ease-in-out">
-        <img src="/icons/github.svg" class="w-6" alt="">
+        {/if}
+        {#if work.github}
+        <a href={work.github} target="_blank" 
+        class="text-white text-base sm:text-lg border box-content border-white gap-2 font-semibold flex items-center justify-center rounded-sm bg-black py-2 w-[50%] sm:w-36 hover:bg-zinc-800 transition-all duration-200 ease-in-out">
+            <img src="/icons/github.svg" class="w-5" alt="">
             Github
         </a>
+        {/if}
     </div>
 </main>
+
+{:else}
+<div class="w-full h-screen flex flex-col items-center justify-center px-4">
+    <h2 class="text-2xl sm:text-3xl text-white font-medium text-center">404 <span class="ml-4">Work not found</span></h2>
+</div>
+{/if}

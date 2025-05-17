@@ -5,10 +5,10 @@
 <div class="" data-cursor="asteroid">
   <div class="w-full flex items-center justify-between mt-8 py-10 px-4 sm:px-8 md:px-20">
     <a href="/">
-      <img src="/extra/left-w.svg" class="w-12 hover:scale-120 transition-all duration-200 ease-in-out" alt="">
+      <img src="/extra/left-w.svg" class="w-8 lg:w-12 hover:scale-120 transition-all duration-200 ease-in-out" alt="">
     </a>
     <h1 class="karantina relative text-right  text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
-      <img src="/icons/helmet.svg" alt="" class="w-16 md:24 lg:w-32 absolute z-30 top-0 -left-2 sm:top-1 sm:left-1 md:top-3 md:left-14 lg:-top-6 -rotate-12 lg:left-7">
+      <img src="/icons/helmet.svg" alt="" class="w-16 md:24 lg:w-32 absolute z-30 -top-9 -left-7 sm:-top-8 sm:-left-7 md:-top-4 md:-left-6 lg:-top-14 -rotate-12 lg:-left-12">
         My Work
     </h1></div>
   

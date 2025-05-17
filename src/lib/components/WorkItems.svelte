@@ -1,8 +1,11 @@
 <script>
 	import { goto } from "$app/navigation";
+    import { onMount } from "svelte";
 
     let {type= "square", img, title, description, link = ""} = $props();
     let isOpen = $state(false);
+    let isMobile = $state(false);
+
     switch (type) {
         case "square":
             type= "aspect-square"
@@ -16,8 +19,22 @@
         default:
             type= "aspect-square"
     }
+
+
+    function checkSize() {
+        isMobile = window.innerWidth > 768;
+    }
+
+    onMount(() => {
+        checkSize();
+        window.addEventListener('resize', checkSize);
+
+        return () => {
+            window.removeEventListener('resize', checkSize);
+        };
+    });
     function handleClick() {
-        if (!isOpen) {
+        if (!isOpen && !isMobile) {
             isOpen = true;
         } else {
             goto('/work/' + title);
