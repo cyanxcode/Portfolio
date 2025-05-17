@@ -8,7 +8,6 @@
 	import Work from "$lib/components/Work.svelte";
     import '@fontsource/karantina';
 </script>
-
 <main  data-cursor="asteroid" class="w-full min-h-screen overflow-x-hidden cursor-default">
 <CursorEffect extraClass="grid place-items-center">
     <div class="h-auto lg:h-screen box-border py-24 w-full grid place-items-center relative px-4 md:px-10">

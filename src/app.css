@@ -36,9 +36,9 @@
   }
 }
 .shutter {
-  animation: shutter 1.4s ease-in-out forwards;
+  animation: shutter .8s ease-in-out forwards;
 }
 
 .shutter-reverse {
-  animation: shutter-reverse 1.4s ease-in-out forwards;
+  animation: shutter-reverse .8s ease-in-out forwards;
 }
