@@ -34,7 +34,7 @@
     </h1>
 \</div>
 <div class="text-white flex flex-col items-center pb-20">
-    <Accordian type="single" extraClass="w-[90%] md:w-[60%] px-10">
+    <Accordian type="single" extraClass="w-full md:w-[70%] px-10">
         {#each faqs as faq}
         <AccordianIteam>
             <AccordianTrigger>

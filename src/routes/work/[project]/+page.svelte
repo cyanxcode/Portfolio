@@ -9,7 +9,7 @@
 {#if work}
 <main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mt-4 md:mt-16 mb-20">
 
-    <div class="flex  gap-4 sm:gap-10 items-center p-10 pt-20">
+    <div class="flex gap-4 sm:gap-10 items-center pt-20">
         <a href="/work">
             <img src="/extra/left-w.svg" class="w-6 sm:w-8 hover:scale-110 transition-all duration-200 ease-in-out" alt="">
         </a>
