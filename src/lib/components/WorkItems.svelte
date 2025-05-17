@@ -39,9 +39,9 @@
 
 
 <button data-cursor="icon" class={`${type} cursor-none w-full h-full overflow-hidden rounded-2xl object-cover relative group`} onclick={handleClick}>
-    <img src={img} alt={title} class={`w-full h-full object-cover transition-all duration-300 ease-in-out`}>
+    <img src={img} alt={title} class={`w-full h-full object-cover md:blur-md md:group-hover:blur-none transition-all duration-300 ease-in-out`}>
 
-    <div class={` absolute w-full h-full top-0 left-0 z-20 bg-gradient-to-t p-5 from-black`}>
+    <div class={` absolute w-full h-full top-0 left-0 z-20 bg-gradient-to-t p-5 from-black md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 ease-in-out`}>
       <div class="flex flex-col items-start justify-end h-full gap-2 text-left ">
         <h4 class="text-2xl tracking-wider lg:text-3xl karantina text-white whitespace-nowrap">{title}</h4>
         <p class="text-zinc-300 text-sm ml-2 truncate whitespace-nowrap w-[90%]">{description}</p>
