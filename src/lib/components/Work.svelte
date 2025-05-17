@@ -15,8 +15,8 @@
   <div class="grid grid-cols-1 md:grid-cols-3 px-6 md:px-24 gap-4">
     <WorkItems type="tall" img="/work/Apple3.png" title="Apple Website Recreated" description="Showcasing iPhone 15 Pro"/>    
     <WorkItems type="wide" img="/work/Amprio.png" title="Amprio" description="A full-fledged ecommerce store for a lighting brand"/>
-    <WorkItems type="square" img="/work/Apple.png" title="Apple Website Recreated" description="Redesigned Apple Website showcasing iPhone 15 Pro"/>
     <WorkItems type="square" img="/work/Cybercup.png" title="Cybercup" description="Designed the Website for National Level Hackathon"/>
+    <WorkItems type="square" img="/work/Apple.png" title="Apple Website Recreated" description="Redesigned Apple Website showcasing iPhone 15 Pro"/>
 
 
   

@@ -45,8 +45,8 @@
 	    <div class="fixed w-full bottom-0 h-1/2 z-40 bg-black shutter pointer-events-none">
 	    	<div class="h3 karantina uppercase fixed bottom-full left-1/2 z-50 translate-y-full  -translate-x-1/2 text-9xl text-white"></div>
 	    </div>
-	    <div class="fixed w-full h-1/2 z-40 bg-black shutter-reverse pointer-events-none">
-	    	<div class="h3 karantina uppercase fixed top-full left-1/2 z-50 -translate-y-full -translate-x-1/2 md:-translate-y-1/2 whitespace-nowrap text-6xl md:text-7xl lg:text-9xl text-white ">
+	    <div class="fixed w-full h-[calc(50%+2px)] z-40 bg-black shutter-reverse pointer-events-none">
+	    	<div class="h3 karantina uppercase fixed top-full left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-6xl md:text-7xl lg:text-9xl text-white ">
                 {#if toGo}
                     {toGo}
                 {:else}

@@ -1,4 +1,4 @@
-<footer class="w-full bg-black relative overflow-hidden">
+<footer data-cursor="asteroid" class="w-full bg-black relative overflow-hidden">
     <div class="absolute w-full h-0.5 bg-zinc-200 blur-sm"></div>
     <div class="grid grid-cols-2 p-10">
         <div class="text-white uppercase font-semibold h-32 ml-8">INFO</div>
