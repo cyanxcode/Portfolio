@@ -1,12 +1,9 @@
 @import 'tailwindcss';
-
+@import "@fontsource/karantina"; /* Import Karantina font styles */
 
 .karantina {
-    font-family: 'Karantina';
-    src: url('/fonts/Karantina-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+    font-family: 'Karantina', sans-serif;
+  }
 .jetbrains {
     font-family: 'JetBrains Mono Variable', monospace;
-  }
+}

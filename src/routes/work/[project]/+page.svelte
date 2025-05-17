@@ -1,21 +1,24 @@
 <script>
     import { data } from "$lib/dats";
     import { page } from '$app/stores';
+	import ImageCarousel from "$lib/components/ImageCarousel.svelte";
 
     let work = data.find((item) => item.title === $page.params.project);
 </script>
 
 {#if work}
-<main class="flex flex-col gap-4 px-4 sm:px-10 md:px-20 lg:px-40 xl:px-60 mb-20">
+<main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mb-20">
 
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 items-center p-6 sm:p-10 pt-10 sm:pt-20">
+    <div class="flex  gap-4 sm:gap-10 items-center p-6 sm:p-10 pt-20">
         <a href="/work">
             <img src="/extra/left-w.svg" class="w-6 sm:w-8 hover:scale-110 transition-all duration-200 ease-in-out" alt="">
         </a>
         <h2 class="text-2xl sm:text-3xl text-white font-medium text-center sm:text-left">{work.title}</h2>
     </div>
-
-    <div class="w-full grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3">
+    <div class="md:hidden">
+        <ImageCarousel />
+    </div>
+    <div class="w-full md:grid hidden md:grid-cols-4 md:grid-rows-2 gap-3">
         <div class="md:col-span-2 md:row-span-2 aspect-square rounded-lg overflow-hidden bg-red-100">
             <img src={work.img[0]} alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
         </div>
