@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { goto } from "$app/navigation";
     import { onMount } from "svelte";
 
@@ -32,7 +32,8 @@
             window.removeEventListener('resize', checkSize);
         };
     });
-    function handleClick() {
+    const handleClick = async () =>  {
+        await new Promise(resolve => setTimeout(resolve, 400));
         goto('/work/' + title);
     }
 </script>
