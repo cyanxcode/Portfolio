@@ -3,7 +3,13 @@
     <div class="grid grid-cols-2 p-10">
         <div class="text-white uppercase font-semibold h-32 ml-8">INFO</div>
         <div class="text-white uppercase flex flex-col gap-4">
-            <p class="flex  flex-col gap-1 items-start">Email <span class="text-zinc-300 lowercase text-sm hover:underline">avijitv1205@gmail.com</span></p>
+            <a href="mailto:avijitv1205@gmail.com" class="flex  flex-col gap-1 items-start">           
+                <p class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">
+                    Email 
+                    <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5">
+                </p>
+                <span class="text-zinc-300 lowercase text-sm hover:underline">avijitv1205@gmail.com</span>
+            </a>
             <a href="/work" class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">Work <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5"></a>
             <a href="https://rxresu.me/codinginstant/cyan" class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">Resume <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5"></a>
 

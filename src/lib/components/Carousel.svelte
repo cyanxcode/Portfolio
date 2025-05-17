@@ -11,12 +11,12 @@
         <button data-cursor="click" class="my-4 bg-white w-[80%] h-12 rounded-lg">Book a call</button>
         <div class="flex w-full px-4 justify-between">
           <div class="text-white">
-            <p class="font-medium">Prefer to email?</p>
-            <p class="font-light text-sm text-zinc-300">avijitv1205@gmail.com</p>
+            <a href="mailto:avijitv1205@gmail.com" class="font-medium">Prefer to email?</a>
+            <a href="mailto:avijitv1205@gmail.com" class="font-light text-sm text-zinc-300">avijitv1205@gmail.com</a>
           </div>
-          <button data-cursor="click" class="aspect-square w-12 bg-white rounded-full flex items-center justify-center ">
+          <a href="mailto:avijitv1205@gmail.com" data-cursor="click" class="aspect-square w-12 h-12 bg-white rounded-full flex items-center justify-center ">
             <img src="/extra/arrow-black-r.svg" class="w-7" alt="">
-          </button>
+          </a>
         </div>
       </div>
     </div>
