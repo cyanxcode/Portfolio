@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
    import { onMount } from 'svelte';
  
    let isScrolling = $state(false);
@@ -10,6 +11,10 @@
    let speed = 1.4;
    let bounceFactor = 0.1; 
    let bounceState = $state(0);
+
+   const handleClick = () => {
+    goto('https://rxresu.me/codinginstant/cyan');
+   };
  
    const handleScroll = () => {
      isScrolling = true;
@@ -78,7 +83,7 @@ if (direction === 1 && offset >= 0) {
     <!-- Image -->
 
     <!-- Button with Arc Text -->
-    <button
+    <a href="https://rxresu.me/codinginstant/cyan" target="_blank"
       data-cursor="icon"
       class="hover:scale-105 cursor-none absolute z-10 left-1/2 -translate-y-1/2 -translate-x-1/2 top-full w-28 md:w-32 aspect-square border-[10px] md:border-[12px] border-black rounded-full bg-blue-600 text-white font-medium transition-all duration-300 ease-in-out">
       
@@ -94,7 +99,7 @@ if (direction === 1 && offset >= 0) {
         </text>
       </svg>
       <img src="/extra/arrow-top-r.svg" alt="" class="w-8 md:w-10 left-1/2 absolute -translate-1/2 top-1/2" />
-    </button>
+    </a>
   </div>
 
   <!-- ✅ Marquee Section -->

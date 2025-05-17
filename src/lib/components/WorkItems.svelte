@@ -1,4 +1,6 @@
 <script>
+	import { goto } from "$app/navigation";
+
     let {type= "square", img, title, description, link = ""} = $props();
     let isOpen = $state(false);
     switch (type) {
@@ -18,7 +20,7 @@
         if (!isOpen) {
             isOpen = true;
         } else {
-            // Go to the link
+            goto('/work/' + title);
         }
     }
 </script>

@@ -38,10 +38,10 @@
         {#each faqs as faq}
         <AccordianIteam>
             <AccordianTrigger>
-                <p class="text-md font-light">{faq.question}</p>
+                <p class="">{faq.question}</p>
             </AccordianTrigger>
             <AccordianContent>
-                <p class="text-md font-light">{faq.answer}</p>
+                <p class="font-light px-2">{faq.answer}</p>
             </AccordianContent>
         </AccordianIteam>
         {/each}
