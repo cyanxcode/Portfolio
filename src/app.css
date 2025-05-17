@@ -7,3 +7,38 @@
 .jetbrains {
     font-family: 'JetBrains Mono Variable', monospace;
 }
+@keyframes shutter {
+  0% {
+    transform: translateY(100%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes shutter-reverse {
+  0% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  60% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.shutter {
+  animation: shutter 1.4s ease-in-out forwards;
+}
+
+.shutter-reverse {
+  animation: shutter-reverse 1.4s ease-in-out forwards;
+}
