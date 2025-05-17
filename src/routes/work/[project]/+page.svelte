@@ -7,15 +7,15 @@
 </script>
 
 {#if work}
-<main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mt-16 mb-20">
+<main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mt-4 md:mt-16 mb-20">
 
-    <div class="flex  gap-4 sm:gap-10 items-center p-6 sm:p-10 pt-20">
+    <div class="flex  gap-4 sm:gap-10 items-center p-10 pt-20">
         <a href="/work">
             <img src="/extra/left-w.svg" class="w-6 sm:w-8 hover:scale-110 transition-all duration-200 ease-in-out" alt="">
         </a>
-        <h2 class="text-2xl sm:text-3xl text-white font-medium text-center sm:text-left">{work.title}</h2>
+        <h2 class="text-2xl sm:text-3xl text-white font-medium text-left">{work.title}</h2>
     </div>
-    <div class="md:hidden">
+    <div class="md:hidden block">
         <ImageCarousel images={work.img}/>
     </div>
     <div class="w-full md:grid hidden md:grid-cols-4 md:grid-rows-2 gap-3">
