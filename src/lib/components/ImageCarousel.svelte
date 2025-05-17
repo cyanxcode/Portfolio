@@ -29,9 +29,9 @@
     function touchEnd() {
       if (!isDragging) return;
       let diff = currentX - startX;
-      if (diff > 50) {
+      if (diff > 25) {
         prev();
-      } else if (diff < -50) {
+      } else if (diff < -25) {
         next();
       }
       isDragging = false;

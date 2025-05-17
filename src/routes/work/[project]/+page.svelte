@@ -1,5 +1,5 @@
 <script>
-    import { data } from "$lib/dats";
+    import { data } from "$lib/data";
     import { page } from '$app/stores';
 	import ImageCarousel from "$lib/components/ImageCarousel.svelte";
 
@@ -16,15 +16,15 @@
         <h2 class="text-2xl sm:text-3xl text-white font-medium text-center sm:text-left">{work.title}</h2>
     </div>
     <div class="md:hidden">
-        <ImageCarousel />
+        <ImageCarousel images={work.img}/>
     </div>
     <div class="w-full md:grid hidden md:grid-cols-4 md:grid-rows-2 gap-3">
         <div class="md:col-span-2 md:row-span-2 aspect-square rounded-lg overflow-hidden bg-red-100">
             <img src={work.img[0]} alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
         </div>
-        {#each Array(4) as _, i}
+        {#each Array(work.img.length - 1) as _, i}
             <div class="aspect-square hidden md:block rounded-lg overflow-hidden">
-                <img src="/work/Amprio.png" alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
+                <img src={work.img[i + 1]} alt="" class="w-full h-full hover:scale-105 transition-all duration-200 ease-in-out object-cover">
             </div>
         {/each}
     </div>
@@ -36,9 +36,11 @@
     {#each work.section as section}
         <h3 class="text-lg sm:text-xl font-semibold text-white mt-4 sm:mt-5">{section.title}</h3>
 
-        <p class="text-zinc-400 text-base sm:text-lg font-light">
-            {@html section.content}
-        </p>
+            <ul class="list-disc pl-6 text-inde ml-6">
+                <p class="text-zinc-400 text-base sm:text-lg font-light">
+                    {@html section.content}
+                </p>
+            </ul>
     {/each}
 
     <div class="flex flex-row gap-4 py-6">
