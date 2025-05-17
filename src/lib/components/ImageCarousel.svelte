@@ -64,9 +64,9 @@
       {#each images as _, i}
         <button
           onclick={() => (currentIndex = i)}
-          class="w-3 h-3 rounded-full transition-colors"
+          class="w-3 h-3 opacity-90 rounded-full transition-colors"
           class:selected={i === currentIndex}
-          style="background-color: {i === currentIndex ? '#000' : '#bbb'}"
+          style="background-color: {i === currentIndex ? '#000' : '#777'}; scale: {i === currentIndex ? '1' : '0.8'}"
           aria-label={`Go to slide ${i + 1}`}
         ></button>
       {/each}
