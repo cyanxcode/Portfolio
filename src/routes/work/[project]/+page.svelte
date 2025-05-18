@@ -6,7 +6,13 @@
     let work = data.find((item) => item.title.toLowerCase() === $page.params.project.toLowerCase());
 </script>
 
+
+<svelte:head>
+	<title>{work ? work.title: "Cyan Studios"}</title>
+</svelte:head>
+
 {#if work}
+
 <main class="flex flex-col gap-4 px-8 sm:px-10 md:px-20 lg:px-40 xl:px-60 mt-4 md:mt-16 mb-20">
 
     <div class="flex gap-4 sm:gap-10 items-center pt-20">

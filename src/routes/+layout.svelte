@@ -9,6 +9,10 @@
 
 	let { children } = $props();
 </script>
+
+<svelte:head>
+	<title>Cyan Studios</title>
+</svelte:head>
 <Transition />
 <Navbar />
 

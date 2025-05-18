@@ -3,6 +3,9 @@
 
 </script>
 
+<svelte:head>
+	<title>My Work</title>
+</svelte:head>
 <div class="" data-cursor="asteroid">
   <div class="w-full flex items-center justify-between mt-8 py-10 px-12 md:px-20">
     <a href="/">

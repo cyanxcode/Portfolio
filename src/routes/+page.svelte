@@ -9,6 +9,10 @@
   import '@fontsource/karantina';
 
 </script>
+
+<svelte:head>
+	<title>Cyan Studios</title>
+</svelte:head>
 <main  data-cursor="asteroid" class="w-full min-h-screen overflow-x-hidden cursor-default">
   <Landing />
   
