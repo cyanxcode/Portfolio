@@ -14,5 +14,7 @@
 
 <Stars />
 <Cursor />
+<div class="min-h-screen">
 {@render children()}
+</div>
 <Footer />

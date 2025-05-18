@@ -1,3 +1,21 @@
+<script>
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    if (!document.querySelector('script[src*="embed.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  });
+
+  function openTidyCalPopup() {
+    // This assumes TidyCal exposes a global method (like Calendly does). If not, this won't work.
+    // TidyCal unfortunately does not provide an official popup API as of now.
+    window.open('https://tidycal.com/codinginstant/15-minute-meeting', '_blank');
+  }
+</script>
 
 
 <div class="overflow-x-auto hide-scrollbar" data-cursor="asteroid">
@@ -10,7 +28,7 @@
       <div class="absolute z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
         <h4 class="text-white text-4xl text-center">Let’s Talk About <br/> Your Project</h4>
         <p class="text-white text-center font-extralight">Schedule a free 15-minute call to <br>discuss your ideas.</p>
-        <button data-cursor="click" class="my-4 bg-white w-[80%] h-12 rounded-lg">Book a call</button>
+        <button onclick={openTidyCalPopup} data-cursor="click" class="my-4 bg-white w-[80%] h-12 rounded-lg">Book a call</button>
         <div class="flex w-full px-4 justify-between">
           <div class="text-white">
             <a href="mailto:avijitv1205@gmail.com" class="font-medium">Prefer to email?</a>
