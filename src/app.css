@@ -42,3 +42,6 @@
 .shutter-reverse {
   animation: shutter-reverse .8s ease-in-out forwards;
 }
+    .char {
+      display: inline-block;
+    }

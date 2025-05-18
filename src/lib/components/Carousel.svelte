@@ -1,9 +1,11 @@
+
+
 <div class="overflow-x-auto hide-scrollbar" data-cursor="asteroid">
     <div class="w-full snap-x snap-mandatory flex xl:grid xl:grid-cols-4 gap-5 flex-row px-4 py-8"
     style="scroll-behavior: smooth;"
     >
 
-    <div class="snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] transition-all duration-300 ease-initial">
+    <div class=" snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] hover:-translate-y-6 transition-all duration-300 ease-initial">
       <img src="/cards/card-5.svg" class="w-full h-full object-cover" alt="">
       <div class="absolute z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
         <h4 class="text-white text-4xl text-center">Let’s Talk About <br/> Your Project</h4>
@@ -21,7 +23,7 @@
       </div>
     </div>
         
-        <div class="snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] transition-all duration-300 ease-initial">
+        <div class="  snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] hover:-translate-y-6 transition-all duration-300 ease-initial">
           <img src="/cards/card-7.svg" class="w-full h-full object-cover" alt="">
           <div class="absolute z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
             <img src="/icons/figma.svg" alt="" class="w-16 pb-8">
@@ -29,7 +31,7 @@
             <p class="text-zinc-200 text-lg text-center font-light">From wireframes to final visuals, I create smooth, modern designs your users will love.</p>
           </div>
         </div> 
-        <div class="snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] transition-all duration-300 ease-initial">
+        <div class=" snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] hover:-translate-y-6 transition-all duration-300 ease-initial">
           <img src="/cards/card-8.svg" class="w-full h-full object-cover" alt="">
           <div class="absolute  z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
             <div class=" z-20 absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -40,7 +42,7 @@
           </div>
         </div>
         
-        <div class="snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] transition-all duration-300 ease-initial">
+        <div class=" snap-start w-84 xl:w-full h-96 flex-shrink-0 rounded-2xl overflow-hidden relative hover:scale-[1.02] hover:-translate-y-6 transition-all duration-300 ease-initial">
           <img src="/cards/card-4.svg" class="w-full h-full object-cover" alt="">
           <div class="absolute z-10 top-0 left-0 w-full h-full flex flex-col p-4 items-center justify-center gap-4">
             <img src="/extra/home.svg" alt="" class="w-16 pb-8">

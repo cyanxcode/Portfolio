@@ -1,6 +1,13 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
    import { onMount } from 'svelte';
+   import gsap from 'gsap';
+   import { ScrollTrigger } from 'gsap/ScrollTrigger';
+   import { browser } from '$app/environment';
+
+   let textEL: any;
+   let paraEl: any;
+   let text = "ABOUT AVIJIT VERMA";
+   let splitText = text.split("");
  
    let isScrolling = $state(false);
    let timeout: ReturnType<typeof setTimeout>;
@@ -12,9 +19,7 @@
    let bounceFactor = 0.1; 
    let bounceState = $state(0);
 
-   const handleClick = () => {
-    goto('https://rxresu.me/codinginstant/cyan');
-   };
+
  
    const handleScroll = () => {
      isScrolling = true;
@@ -26,6 +31,9 @@
      }, 100);
    };
  
+   onMount(() => {
+    if (!browser) return;
+    gsap.registerPlugin(ScrollTrigger);
    const animate = () => {
      if (isScrolling) {
        // When scrolling, add bounce to the direction change
@@ -43,7 +51,7 @@
      }
  
      // Loop back seamlessly
-  const totalWidth = marqueeEl.scrollWidth / 2;
+  const totalWidth = marqueeEl.scrollWidth / 3;
 
 if (direction === -1 && offset <= -totalWidth) {
   offset = 0;
@@ -56,8 +64,29 @@ if (direction === 1 && offset >= 0) {
      requestAnimationFrame(animate);
    };
  
-   onMount(() => {
-     requestAnimationFrame(animate);
+    let chars = textEL.querySelectorAll('.char');
+
+    gsap.from(chars, {
+      scrollTrigger: {
+      trigger: textEL,
+      start: 'top 80%',
+    },
+    y: 60,
+    opacity: 0,
+    stagger: 0.1,
+    ease: 'power2.out',
+  });
+  gsap.from(paraEl, {
+    scrollTrigger: {
+      trigger: paraEl,
+      start: 'top 80%',
+    },
+    y: 60,
+    opacity: 0,
+    duration: 1.2,
+   });
+
+    requestAnimationFrame(animate);
    });
  </script>
  
@@ -71,10 +100,16 @@ if (direction === 1 && offset >= 0) {
     </div>
     <!-- Text Section -->
     <div class="flex flex-col text-left items-start p-4 md:p-8 gap-1 md:gap-6">
-      <h1 class="karantina text-left text-white text-5xl md:text-7xl lg:text-8xl leading-tight uppercase whitespace-nowrap">
-        About <br /> Avijit Verma
+      <h1 bind:this={textEL} class="karantina text-left text-white text-5xl md:text-7xl lg:text-8xl leading-tight uppercase whitespace-nowrap">
+        {#each splitText as char, i}
+            {#if (i == 5)}
+              <br>
+            {:else}
+              <span class="char">{char == ' '? '\u00A0': char}</span>
+            {/if}
+        {/each}
       </h1>
-      <p class="text-white font-extralight text-sm sm:text-base md:text-lg lg:text-xl max-w-md">
+      <p bind:this={paraEl} class="text-white font-extralight text-sm sm:text-base md:text-lg lg:text-xl max-w-md">
         I am a full-stack developer who turns bold ideas into reality. 
         I specialize in blending code with modern design to craft applications that don't just look great - but perform.
       </p>
@@ -105,14 +140,14 @@ if (direction === 1 && offset >= 0) {
   <!-- ✅ Marquee Section -->
   <div class="bg-zinc-200 overflow-hidden h-28 md:h-36 mt-4 mb-24">
     <div bind:this={marqueeEl} class="flex h-full w-max whitespace-nowrap animate-scroll">
-      {#each Array(2) as _}
+      {#each Array(3) as _}
         <div class="flex items-center justify-between gap-16 md:gap-32 h-full text-black px-6">
+          <img src="/extra/star4.svg" alt="" class="w-4 md:w-6" />
           <h1 class="text-3xl md:text-4xl lg:text-5xl karantina text-center">Web Developer</h1>
           <img src="/extra/star4.svg" alt="" class="w-4 md:w-6" />
           <h1 class="text-3xl md:text-4xl lg:text-5xl karantina text-center">UI Designer</h1>
           <img src="/extra/star4.svg" alt="" class="w-4 md:w-6" />
           <h1 class="text-3xl md:text-4xl lg:text-5xl karantina text-center">Engineer</h1>
-          <img src="/extra/star4.svg" alt="" class="w-4 md:w-6" />
         </div>
 
         <div class="w-4 md:w-20"></div>
