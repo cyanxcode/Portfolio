@@ -127,7 +127,7 @@ if (direction === 1 && offset >= 0) {
         <defs>
           <path id="arcPath" d="M10,60 A40,40 0 0,1 90,60" />
         </defs>
-        <text fill="white" font-size="10" font-weight="400" style="letter-spacing: 1px;">
+        <text fill="white" font-size="10" font-weight="400" style="letter-spacing: 1px;" class="font-bold">
           <textPath href="#arcPath" startOffset="50%" text-anchor="middle">
             GET MY RESUME
           </textPath>
