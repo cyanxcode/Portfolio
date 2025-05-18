@@ -71,9 +71,9 @@ if (direction === 1 && offset >= 0) {
       trigger: textEL,
       start: 'top 80%',
     },
-    y: 60,
+    y: 30,
     opacity: 0,
-    stagger: 0.1,
+    stagger: 0.05,
     ease: 'power2.out',
   });
   gsap.from(paraEl, {
@@ -81,9 +81,9 @@ if (direction === 1 && offset >= 0) {
       trigger: paraEl,
       start: 'top 80%',
     },
-    y: 60,
+    y: 30,
     opacity: 0,
-    duration: 1.2,
+    duration: 1,
    });
 
     requestAnimationFrame(animate);

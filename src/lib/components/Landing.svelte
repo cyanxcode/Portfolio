@@ -10,8 +10,8 @@
   
       gsap.from(chars, {
         opacity: 0,
-        y: 60,
-        stagger: 0.1,
+        y: 30,
+        stagger: 0.05,
         duration: 1
       });
     });
