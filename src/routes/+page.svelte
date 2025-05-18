@@ -6,10 +6,22 @@
 	import FAQs from "$lib/components/FAQs.svelte";
 	import Testimonial from "$lib/components/Testimonial.svelte";
 	import Work from "$lib/components/Work.svelte";
-    import '@fontsource/karantina';
+  import '@fontsource/karantina';
+
 </script>
 <main  data-cursor="asteroid" class="w-full min-h-screen overflow-x-hidden cursor-default">
-<CursorEffect extraClass="grid place-items-center">
+  
+  <CursorEffect extraClass="grid place-items-center">
+
+  <iframe
+  src="https://my.spline.design/claritystream-D6CXXIB05mBhwdSjo6fw0m9z/"
+  title="3D Scene"
+  frameborder="0"
+  width="100%"
+  height="100%"
+  style="border: none; "
+  class="absolute top-0 left-0 w-full h-[50vw] md:h-full pointer-events-none"
+  ></iframe>
     <div class="h-auto lg:h-screen box-border py-24 w-full grid place-items-center relative px-4 md:px-10">
 
         <div class="relative z-10 w-full flex flex-row justify-end items-center pr-5 md:px-10 lg:px-24 gap-6">
@@ -34,6 +46,7 @@
       </div>
 </CursorEffect>
 <About />
+
 <Carousel />
 
 <Work />

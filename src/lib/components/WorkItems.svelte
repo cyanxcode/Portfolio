@@ -39,8 +39,8 @@
 </script>
 
 
-<button data-cursor="icon" class={`${type} cursor-none w-full h-full overflow-hidden rounded-2xl object-cover relative group`} onclick={handleClick}>
-    <img src={img} alt={title} class={`w-full h-full object-cover lg:blur-md lg:group-hover:blur-none transition-all duration-300 ease-in-out`}>
+<button data-cursor="icon" class={`${type} parent cursor-none w-full h-full overflow-hidden rounded-2xl object-cover relative group`} onclick={handleClick}>
+    <img src={img} alt={title} class={`w-full h-full object-cover effect transition-all duration-300 ease-in-out`}>
 
     <div class={` absolute w-full h-full top-0 left-0 z-20 bg-gradient-to-t p-5 from-black lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-300 ease-in-out`}>
       <div class="flex flex-col items-start justify-end h-full gap-2 text-left ">
@@ -49,3 +49,21 @@
       </div>
     </div>
 </button>
+
+<style>
+    @media (hover:hover) {
+        .effect {
+            filter: blur(8px);
+            transition: all 0.3s ease-in-out;
+        }
+        .parent:hover .effect {
+            filter: blur(0px);
+        }
+    }
+
+    @media (hover:none) {
+        .effect {
+            filter: blur(0px);
+        }
+    }
+</style>
