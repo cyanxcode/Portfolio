@@ -32,7 +32,7 @@
     <h1 class="karantina text-right pl-4 sm:pl-8 md:pl-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
         FAQs
     </h1>
-\</div>
+</div>
 <div class="text-white flex flex-col items-center pb-20">
     <Accordian type="single" extraClass="w-full md:w-[70%] px-10">
         {#each faqs as faq}
