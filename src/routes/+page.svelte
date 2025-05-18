@@ -13,15 +13,18 @@
   
   <CursorEffect extraClass="grid place-items-center">
 
-  <iframe
-  src="https://my.spline.design/claritystream-D6CXXIB05mBhwdSjo6fw0m9z/"
-  title="3D Scene"
-  frameborder="0"
-  width="100%"
-  height="100%"
-  style="border: none; "
-  class="absolute top-0 left-0 w-full h-[50vw] md:h-full pointer-events-none"
-  ></iframe>
+      <iframe
+      src="https://my.spline.design/claritystream-D6CXXIB05mBhwdSjo6fw0m9z/"
+      title="3D Scene"
+      frameborder="0"
+      width="100%"
+      height="100%"
+      style="border: none; "
+      class="absolute top-0 left-0 w-full h-[50vw] md:h-full pointer-events-none"
+      >
+    </iframe>
+    <div class="w-40 h-12 bg-black z-10 absolute right-2 top-[calc(50vw-4rem)] md:top-auto md:bottom-5 rounded-xl"></div>
+ 
     <div class="h-auto lg:h-screen box-border py-24 w-full grid place-items-center relative px-4 md:px-10">
 
         <div class="relative z-10 w-full flex flex-row justify-end items-center pr-5 md:px-10 lg:px-24 gap-6">
