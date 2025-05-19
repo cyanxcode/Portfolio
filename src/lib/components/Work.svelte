@@ -1,15 +1,41 @@
-<script>
+<script lang="ts">
 	import { goto } from "$app/navigation";
 	import WorkItems from "./WorkItems.svelte";
+  import { onMount } from "svelte";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/all";
+
+    let textEl: any;
+   let text = "MY WORK";
+   let splitText = text.split("");
+
   function handleClick() {
     goto("/work");
   }
+  onMount(() => {
+ 
+    gsap.registerPlugin(ScrollTrigger);
+    let chars = textEl.querySelectorAll('.char');
+
+    gsap.from(chars, {
+      scrollTrigger: {
+      trigger: textEl,
+      start: 'top 80%',
+    },
+    y: 30,
+    opacity: 0,
+    stagger: 0.05,
+    ease: 'power2.out',
+  });
+  })
 </script>
 <div class="" data-cursor="asteroid">
   <div class="w-full flex justify-end mt-8">
-    <h1 class="karantina relative text-right py-10 px-6 sm:px-8 md:px-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
+    <h1 bind:this={textEl} class="karantina relative text-right py-10 px-6 sm:px-8 md:px-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
       <img src="/icons/helmet.svg" alt="" class="w-16 md:24 lg:w-32 absolute z-30 top-0 -left-2 sm:top-1 sm:left-1 md:top-3 md:left-14 lg:-top-6 -rotate-12 lg:left-7">
-        My Work
+       {#each splitText as char, i}
+              <span class="char">{char == ' '? '\u00A0': char}</span>
+        {/each}
     </h1></div>
   
   <div class="grid grid-cols-1 md:grid-cols-3 px-6 md:px-24 gap-4">

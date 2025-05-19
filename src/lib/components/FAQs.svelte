@@ -1,8 +1,34 @@
-<script>
+<script lang="ts">
 	import Accordian from "./Accordian/Accordian.svelte";
 	import AccordianContent from "./Accordian/AccordianContent.svelte";
 	import AccordianIteam from "./Accordian/AccordianIteam.svelte";
 	import AccordianTrigger from "./Accordian/AccordianTrigger.svelte";
+
+
+  import { onMount } from "svelte";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/all";
+
+   let textEl: any;
+   let text = "FAQs";
+   let splitText = text.split("");
+  onMount(() => {
+ 
+    gsap.registerPlugin(ScrollTrigger);
+    let chars = textEl.querySelectorAll('.char');
+
+    gsap.from(chars, {
+      scrollTrigger: {
+      trigger: textEl,
+      start: 'top 80%',
+    },
+    y: 30,
+    opacity: 0,
+    stagger: 0.05,
+    ease: 'power2.out',
+  });
+  })
+
     const faqs = [
   {
     question: "What’s your workflow like?",
@@ -28,9 +54,11 @@
 
 </script>
 
-<div class="flex w-full justify-center py-6 gap-4">
+<div bind:this={textEl} class="flex w-full justify-center py-6 gap-4">
     <h1 class="karantina text-right pl-4 sm:pl-8 md:pl-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
-        FAQs
+      {#each splitText as char}
+      <span class="char">{char == ' '? '\u00A0': char}</span>
+      {/each}
     </h1>
 </div>
 <div class="text-white flex flex-col items-center pb-20">

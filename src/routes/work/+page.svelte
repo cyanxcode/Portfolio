@@ -1,5 +1,30 @@
-<script>
-	import WorkItems from "$lib/components//WorkItems.svelte";
+<script lang="ts">
+
+import WorkItems from "$lib/components//WorkItems.svelte";
+  import { onMount } from "svelte";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/all";
+
+   let textEl: any;
+   let text = "MY WORK";
+   let splitText = text.split("");
+  onMount(() => {
+ 
+    gsap.registerPlugin(ScrollTrigger);
+    let chars = textEl.querySelectorAll('.char');
+
+    gsap.from(chars, {
+      scrollTrigger: {
+      trigger: textEl,
+      start: 'top 80%',
+    },
+    y: 30,
+    opacity: 0,
+    stagger: 0.05,
+    delay: 0.8,
+    ease: 'power2.out',
+  });
+  })
 
 </script>
 
@@ -11,9 +36,11 @@
     <a href="/">
       <img src="/extra/left-w.svg" class="w-8 lg:w-12 hover:scale-120 transition-all duration-200 ease-in-out" alt="">
     </a>
-    <h1 class="karantina relative text-right  text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
+    <h1 bind:this={textEl} class="karantina relative text-right  text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
       <img src="/icons/helmet.svg" alt="" class="w-16 md:24 lg:w-32 absolute z-30 -top-9 -left-7 sm:-top-8 sm:-left-7 md:-top-4 md:-left-6 lg:-top-14 -rotate-12 lg:-left-12">
-        My Work
+      {#each splitText as char, i}
+      <span class="char">{char == ' '? '\u00A0': char}</span>
+{/each}
     </h1></div>
   
   <div class="grid grid-cols-1  md:grid-cols-3 px-12 md:px-24 gap-4 pb-40">

@@ -1,4 +1,28 @@
-<script>
+<script lang="ts">
+
+  import { onMount } from "svelte";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/all";
+
+   let textEl: any;
+   let text = "Testimonial";
+   let splitText = text.split("");
+  onMount(() => {
+ 
+    gsap.registerPlugin(ScrollTrigger);
+    let chars = textEl.querySelectorAll('.char');
+
+    gsap.from(chars, {
+      scrollTrigger: {
+      trigger: textEl,
+      start: 'top 80%',
+    },
+    y: 30,
+    opacity: 0,
+    stagger: 0.05,
+    ease: 'power2.out',
+  });
+  })
     const testimonials = [
       {
         name: "Dr. Shilpi Sharma",
@@ -17,8 +41,10 @@
     ];
   </script>
 <div class="flex items-end py-10 gap-4">
-    <h1 class="karantina text-left pl-4 sm:pl-8 md:pl-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
-        Testimonials 
+    <h1 bind:this={textEl} class="karantina text-left pl-4 sm:pl-8 md:pl-20 text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
+        {#each splitText as char}
+      <span class="char">{char == ' '? '\u00A0': char}</span>
+      {/each}
     </h1>
     <img src="/icons/bb8.svg" alt="" class=" -ml-5 w-20 md:w-40">
 </div>

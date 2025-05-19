@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="flex items-end justify-around relative">
-        <h1 class="karantina text-white text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] leading-none whitespace-nowrap -mb-3 sm:-mb-4 md:-mb-5 lg:-mb-6 xl:-mb-8">
+        <h1 class="karantina text-white text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] leading-none whitespace-nowrap -mb- sm:-mb-4 md:-mb-5 lg:-mb-6 xl:-mb-8">
             GET IN TOUCH
         </h1>
         <img src="/icons/flag.svg" alt="" class="w-[40%] md:w-[30%] -mb-6 sm:-mb-8 md:-mb-10 lg:-mb-12 xl:-mb-14">
