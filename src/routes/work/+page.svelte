@@ -38,7 +38,7 @@ import WorkItems from "$lib/components//WorkItems.svelte";
     </a>
     <h1 bind:this={textEl} class="karantina relative text-right  text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight uppercase">
       <img src="/icons/helmet.svg" alt="" class="w-16 md:24 lg:w-32 absolute z-30 -top-9 -left-7 sm:-top-8 sm:-left-7 md:-top-4 md:-left-6 lg:-top-14 -rotate-12 lg:-left-12">
-      {#each splitText as char, i}
+      {#each splitText as char}
       <span class="char">{char == ' '? '\u00A0': char}</span>
 {/each}
     </h1></div>

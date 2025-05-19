@@ -19,7 +19,7 @@
 
 
 <div class="overflow-x-auto hide-scrollbar" data-cursor="asteroid">
-    <div class="w-full snap-x snap-mandatory flex xl:grid xl:grid-cols-4 gap-5 flex-row px-4 py-8"
+    <div class="w-full snap-x snap-mandatory flex xl:grid xl:grid-cols-4 xl:mr-2 gap-5 flex-row px-4 py-8"
     style="scroll-behavior: smooth;"
     >
 
