@@ -16,37 +16,27 @@
 	let offset = $state(0);
 	let direction = $state(1);
 	let speed = 1.4;
-	let bounceFactor = 0.1;
-	let bounceState = $state(0);
+	let lastScrollTop = $state(0);
 
 	const handleScroll = () => {
-		isScrolling = true;
-		direction = -1; // Reverse on scroll
-		clearTimeout(timeout);
-		timeout = setTimeout(() => {
-			isScrolling = false;
-			direction = 1; // Resume rightward scroll
-		}, 100);
+		const currentScroll = window.scrollY;
+
+		if (currentScroll > lastScrollTop) {
+			// Scrolling down
+			direction = 1;
+		} else if (currentScroll < lastScrollTop) {
+			// Scrolling up
+			direction = -1;
+		}
+
+		lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
 	};
 
 	onMount(() => {
 		if (!browser) return;
 		gsap.registerPlugin(ScrollTrigger);
 		const animate = () => {
-			if (isScrolling) {
-				// When scrolling, add bounce to the direction change
-				bounceState += bounceFactor; // Increase the bounce effect slightly
-
-				// Apply bounce, but after the bounce, make sure the animation continues smoothly.
-				offset += direction * speed * (1 + Math.sin(bounceState));
-
-				// Once the bounce effect finishes, reset it to allow smooth movement.
-				if (Math.abs(Math.sin(bounceState)) < 0.1) {
-					bounceState = 0;
-				}
-			} else {
-				offset += direction * speed;
-			}
+			offset += direction * speed;
 
 			// Loop back seamlessly
 			const totalWidth = marqueeEl.scrollWidth / 3;
