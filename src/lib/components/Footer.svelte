@@ -1,25 +1,38 @@
-<footer data-cursor="asteroid" class="w-full bg-black relative overflow-hidden">
-    <div class="absolute w-full h-0.5 bg-zinc-200 blur-sm"></div>
-    
-    <div class="grid grid-cols-2 p-10">
-        <div class="text-white uppercase font-semibold h-32 ml-8">INFO</div>
-        <div class="text-white uppercase flex flex-col gap-4">
-            <a href="mailto:avijitv1205@gmail.com" class="flex  flex-col gap-1 items-start">           
-                <p class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">
-                    Email 
-                    <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5">
-                </p>
-                <span class="text-zinc-300 lowercase text-sm hover:underline">avijitv1205@gmail.com</span>
-            </a>
-            <a href="/work" class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">Work <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5"></a>
-            <a href="https://rxresu.me/codinginstant/cyan" class="flex gap-2 items-center hover:gap-4 transition-all duration-150 ease-in-out">Resume <img src="/extra/arrow-right.svg" alt="" class="w-6 mb0.5"></a>
+<footer data-cursor="asteroid" class="relative w-full cursor-default overflow-hidden bg-black">
+	<div class="absolute h-0.5 w-full bg-zinc-200 blur-sm"></div>
 
-        </div>
-    </div>
-    <div class="flex items-end justify-around relative">
-        <h1 class="karantina text-white text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] leading-none whitespace-nowrap -mb- sm:-mb-4 md:-mb-5 lg:-mb-6 xl:-mb-8">
-            GET IN TOUCH
-        </h1>
-        <img src="/icons/flag.svg" alt="" class="w-[40%] md:w-[30%] -mb-6 sm:-mb-8 md:-mb-10 lg:-mb-12 xl:-mb-14">
-    </div>
+	<div class="grid grid-cols-2 p-10">
+		<div class="ml-8 h-32 font-semibold text-white uppercase">INFO</div>
+		<div class="flex flex-col gap-4 text-white uppercase">
+			<a href="mailto:avijitv1205@gmail.com" class="flex flex-col items-start gap-1">
+				<p class="flex items-center gap-2 transition-all duration-150 ease-in-out hover:gap-4">
+					Email
+					<img src="/extra/arrow-right.svg" alt="" class="mb0.5 w-6" />
+				</p>
+				<span class="text-sm text-zinc-300 lowercase hover:underline">avijitv1205@gmail.com</span>
+			</a>
+			<a
+				href="/work"
+				class="flex items-center gap-2 transition-all duration-150 ease-in-out hover:gap-4"
+				>Work <img src="/extra/arrow-right.svg" alt="" class="mb0.5 w-6" /></a
+			>
+			<a
+				href="https://rxresu.me/codinginstant/cyan"
+				class="flex items-center gap-2 transition-all duration-150 ease-in-out hover:gap-4"
+				>Resume <img src="/extra/arrow-right.svg" alt="" class="mb0.5 w-6" /></a
+			>
+		</div>
+	</div>
+	<div class="relative flex items-end justify-around">
+		<h1
+			class="karantina -mb- text-7xl leading-none whitespace-nowrap text-white sm:-mb-4 sm:text-8xl md:-mb-5 md:text-9xl lg:-mb-6 lg:text-[10rem] xl:-mb-8 xl:text-[12rem]"
+		>
+			GET IN TOUCH
+		</h1>
+		<img
+			src="/icons/flag.svg"
+			alt=""
+			class="-mb-6 w-[40%] sm:-mb-8 md:-mb-10 md:w-[30%] lg:-mb-12 xl:-mb-14"
+		/>
+	</div>
 </footer>
