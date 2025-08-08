@@ -78,7 +78,7 @@
 				class="absolute top-0 left-0 z-10 flex h-full w-full flex-col items-center justify-center gap-4 p-4"
 			>
 				<div
-					class=" absolute z-20 h-full w-full bg-gradient-to-t from-black via-transparent to-transparent"
+					class=" absolute z-20 h-[120%] w-[120%] bg-gradient-to-t from-black via-transparent to-transparent"
 				></div>
 				<h4 class="font-b w-full text-left text-4xl text-white shadow-2xl">Design System</h4>
 				<p class="text-left text-lg font-light text-zinc-200 text-shadow-md">

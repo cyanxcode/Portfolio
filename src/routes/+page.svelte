@@ -5,7 +5,6 @@
 	import FAQs from '$lib/components/FAQs.svelte';
 	import Landing from '$lib/components/Landing.svelte';
 	import NewEffect from '$lib/components/NewEffect.svelte';
-	import Pricing from '$lib/components/Pricing.svelte';
 	import Testimonial from '$lib/components/Testimonial.svelte';
 	import WhatWeOffer from '$lib/components/WhatWeOffer.svelte';
 	import Work from '$lib/components/Work.svelte';
@@ -19,7 +18,6 @@
 	<Landing />
 	<NewEffect />
 	<Work />
-
 	<Carousel />
 
 	<Testimonial />

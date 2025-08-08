@@ -51,7 +51,7 @@
 >
 	<h2
 		bind:this={headingEl}
-		class="karantina z-10 w-full text-center text-5xl font-extralight -tracking-normal text-white sm:text-7xl lg:text-8xl"
+		class="karantina z-10 w-full text-center text-5xl font-extralight -tracking-normal text-white sm:text-7xl lg:text-8xl xl:text-9xl"
 	>
 		Creating Not Just Websites <br />
 		But a Story.
@@ -60,21 +60,21 @@
 	<img
 		src="/img/me2.jpeg"
 		alt="A professional headshot"
-		class="hero-image animate-float absolute top-[70%] left-[10%] h-20 w-20 rounded-full object-cover sm:top-[65%] sm:right-[20%] md:h-28 md:w-28"
+		class="hero-image animate-float absolute top-[70%] left-[10%] aspect-square w-20 rounded-full object-cover sm:top-[65%] sm:right-[20%] md:w-28 xl:w-36"
 		style="animation-delay: 0s;"
 	/>
 
 	<img
 		src="/img/profile.jpeg"
 		alt="A professional headshot"
-		class="hero-image animate-float absolute top-[25%] right-[10%] h-16 w-16 rounded-full object-cover sm:top-[30%] sm:right-[15%] md:h-20 md:w-20"
+		class="hero-image animate-float absolute top-[25%] right-[10%] aspect-square w-16 rounded-full object-cover sm:top-[30%] sm:right-[15%] md:w-20 xl:w-28"
 		style="animation-delay: 1.5s;"
 	/>
 
 	<img
 		src="/img/me.jpg"
 		alt=""
-		class="hero-image animate-float absolute top-[15%] left-[30%] h-16 w-16 rounded-full object-cover sm:top-[20%] sm:left-[50%] md:h-24 md:w-24 lg:left-[60%]"
+		class="hero-image animate-float absolute top-[15%] left-[30%] aspect-square w-16 rounded-full object-cover sm:top-[20%] sm:left-[50%] md:w-24 lg:left-[60%] xl:w-32"
 		style="animation-delay: 3s;"
 	/>
 </div>
