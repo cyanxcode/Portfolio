@@ -5,7 +5,9 @@
 	import FAQs from '$lib/components/FAQs.svelte';
 	import Landing from '$lib/components/Landing.svelte';
 	import NewEffect from '$lib/components/NewEffect.svelte';
+	import Pricing from '$lib/components/Pricing.svelte';
 	import Testimonial from '$lib/components/Testimonial.svelte';
+	import WhatWeOffer from '$lib/components/WhatWeOffer.svelte';
 	import Work from '$lib/components/Work.svelte';
 	import '@fontsource/karantina';
 </script>
@@ -16,11 +18,12 @@
 <main data-cursor="asteroid" class="min-h-screen w-full cursor-default overflow-x-hidden">
 	<Landing />
 	<NewEffect />
+	<Work />
 
 	<Carousel />
 
-	<Work />
 	<Testimonial />
+	<WhatWeOffer />
 	<div class="h-32 w-full"></div>
 	<About />
 

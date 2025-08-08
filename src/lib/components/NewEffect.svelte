@@ -32,7 +32,7 @@
 					duration: 1.8,
 					y: 0,
 					opacity: 1,
-					stagger: 0.2,
+					stagger: 0.8,
 					ease: 'power2.out'
 				});
 			}
