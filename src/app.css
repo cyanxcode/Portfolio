@@ -1,47 +1,51 @@
 @import 'tailwindcss';
-@import "@fontsource/karantina"; /* Import Karantina font styles */
+@import '@fontsource/karantina'; /* Import Karantina font styles */
+@import '@fontsource/arbutus'; /* Import Arbutus font styles */
 
 .karantina {
-    font-family: 'Karantina', sans-serif;
-  }
+	font-family: 'Karantina', sans-serif;
+}
 .jetbrains {
-    font-family: 'JetBrains Mono Variable', monospace;
+	font-family: 'JetBrains Mono Variable', monospace;
+}
+.abutus {
+	font-family: 'Arbutus', serif;
 }
 @keyframes shutter {
-  0% {
-    transform: translateY(100%);
-  }
-  20% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
+	0% {
+		transform: translateY(100%);
+	}
+	20% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(100%);
+	}
 }
 @keyframes shutter-reverse {
-  0% {
-    transform: translateY(-100%);
-  }
-  20% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-120%);
-  }
+	0% {
+		transform: translateY(-100%);
+	}
+	20% {
+		transform: translateY(0%);
+	}
+	80% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-120%);
+	}
 }
 .shutter {
-  animation: shutter .8s ease-in-out forwards;
+	animation: shutter 0.8s ease-in-out forwards;
 }
 
 .shutter-reverse {
-  animation: shutter-reverse .8s ease-in-out forwards;
+	animation: shutter-reverse 0.8s ease-in-out forwards;
 }
-    .char {
-      display: inline-block;
-    }
+.char {
+	display: inline-block;
+}

@@ -14,7 +14,8 @@
 		large: 'w-12 h-12 bg-white',
 		click: 'w-12 h-12 bg-white flex items-center justify-center text-xs',
 		icon: 'w-12 h-12 bg-white text-white flex items-center justify-center text-xs',
-		asteroid: 'w-12 h-12 flex items-center justify-center duration-100 ease-linear'
+		asteroids: 'w-12 h-12 flex items-center justify-center duration-100 ease-linear',
+		asteroid: ''
 	};
 
 	let animationFrame: number;
@@ -98,9 +99,6 @@
 	>
 		{#if variant === 'icon'}
 			<img src="/extra/arrow-up-right.svg" alt="" class="h-6 w-6" />
-		{/if}
-		{#if variant === 'asteroid'}
-			<img src="/icons/earth.svg" alt="" class="h-6 w-6" />
 		{/if}
 		{#if variant === 'click'}
 			<p>Click</p>
