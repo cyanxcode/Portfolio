@@ -88,7 +88,7 @@
 	</h1>
 </div>
 
-<div class="mx-20 flex flex-col">
+<div class="mx-4 flex flex-col md:mx-10 lg:mx-20">
 	{#each pricingTiers as tier (tier.idx)}
 		<Pricing
 			class="pricing-item"
