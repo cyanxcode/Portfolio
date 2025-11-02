@@ -21,7 +21,6 @@
 	<Carousel />
 
 	<Testimonial />
-	<WhatWeOffer />
 	<div class="h-32 w-full"></div>
 	<About />
 

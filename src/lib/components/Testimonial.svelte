@@ -37,8 +37,12 @@
 			img: '/img/default.jpg',
 			quote:
 				'Working with Avijit was incredible. I had an idea and no clue how to bring it to life, and he delivered a professional website that impresssed our potential clients from day one.'
-		},
-		{
+		}
+	];
+
+	/*
+
+	 {
 			name: 'Rudrakshi Aggarwal',
 			title: 'Co Founder',
 			company: 'Amprio',
@@ -46,7 +50,7 @@
 			quote:
 				'Good work and great communication skills, can fit in any environment and have exceptional technical knowledge.'
 		}
-	];
+	 */
 </script>
 
 <div class="flex items-end gap-4 py-10">
